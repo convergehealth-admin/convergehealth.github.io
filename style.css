@@ -1,17 +1,6 @@
 
 body {
   font-family: "helvetica-now-text", "avenir-next-lt-pro", sans-serif;
-<<<<<<< HEAD
-  margin: 0;
-  padding: 0;
-  background-color: #000;
-}
-
-nav, ul, li, a {
-  all: unset;
-  list-style: none;
-=======
->>>>>>> parent of b4d983c (fix banner)
 }
 
 .hero {
@@ -47,15 +36,3 @@ nav, ul, li, a {
   margin-bottom: 28px;
   color: white;
 }
-<<<<<<< HEAD
-
-.logo-title {
-  font-family: "avenir-next-lt-pro", sans-serif;
-  font-weight: 600;
-  font-size: 1.25rem;
-  display: inline-block;
-  margin-left: 8px;
-  vertical-align: middle;
-}
-=======
->>>>>>> parent of b4d983c (fix banner)
