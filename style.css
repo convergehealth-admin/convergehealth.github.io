@@ -82,6 +82,7 @@ nav ul li a {
 
 .section-text {
   max-width: 800px;
+  margin: 0;          /* remove default margin */
 }
 
 .section-text h2 {
@@ -122,12 +123,16 @@ html {
   color: white;
   min-height: 100vh;
   display: flex;
-  align-items: center;     /* vertical center */
-  justify-content: center; /* horizontal center */
+  align-items: center;      /* vertical centering */
+  justify-content: center;  /* horizontal centering */
   text-align: center;
   z-index: 0;
   overflow: hidden;
+  padding: 0 40px;
 }
+
+
+
 
 
 .who-we-are.full-page::before {
