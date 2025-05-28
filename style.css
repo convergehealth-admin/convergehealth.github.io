@@ -94,9 +94,9 @@ nav ul li a {
 
 .hero-text p {
   font-family: "helvetica-neue-lt-pro", sans-serif;
-  font-size: 1.25rem;
+  font-size: 2rem;
   line-height: 1.8;
-  font-weight: 400;
+  font-weight: 800;
   margin-bottom: 28px;
   color: white;
   max-width: 600px; /* Match h1 width */
