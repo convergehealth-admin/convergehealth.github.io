@@ -95,3 +95,7 @@ nav ul li a {
   line-height: 1.7;
   margin-bottom: 20px;
 }
+
+html {
+  scroll-behavior: smooth;
+}
