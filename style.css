@@ -214,7 +214,8 @@ html, body {
 }
 
 .who-we-are-page {
-  background: url('who-we-are-final.jpg') top center no-repeat;
+  background: url('who-we-are-final.jpg') no-repeat center top / contain;
+  background-attachment: scroll;
   background-size: cover;
   position: relative;
   min-height: 100vh;
@@ -225,7 +226,7 @@ html, body {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0, 31, 63, 0.6); /* Adjust overlay color and transparency */
+  background: rgba(61, 139, 255, 0.2); /* Lighter blue, lower opacity */
   z-index: 0;
 }
 
@@ -234,5 +235,9 @@ html, body {
   position: relative;
   z-index: 1;
   text-align: center;
-  padding: 6rem 2rem;
+  padding: 4rem 2rem; /* from 6rem down to 4rem */
+}
+
+.who-we-are-overlay {
+  background-color: rgba(16, 31, 44, 0.85); /* adjust alpha as needed */
 }
