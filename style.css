@@ -213,3 +213,26 @@ html, body {
   background-color: #001933;
 }
 
+.who-we-are-page {
+  background: url('who-we-are-final.jpg') top center no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+  color: white;
+}
+
+.who-we-are-page::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 31, 63, 0.6); /* Adjust overlay color and transparency */
+  z-index: 0;
+}
+
+.who-we-are-page main,
+.who-we-are-page .content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 6rem 2rem;
+}
