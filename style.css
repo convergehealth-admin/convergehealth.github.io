@@ -121,9 +121,14 @@ html {
   background: url('assets/who-we-are-final.jpg') no-repeat top center / cover;
   color: white;
   min-height: 100vh;
+  display: flex;
+  align-items: center;     /* vertical center */
+  justify-content: center; /* horizontal center */
+  text-align: center;
   z-index: 0;
   overflow: hidden;
 }
+
 
 .who-we-are.full-page::before {
   content: "";
