@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  padding: 0;
+  background-color: #001933; /* match hero bg color */
   font-family: 'Avenir', 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: white;
   background: url('assets/background.png') no-repeat center center / cover;
@@ -119,11 +121,6 @@ html {
 
 /* Ensure top anchoring for the who-we-are background */
 
-
-
-
-
-
 .who-we-are.full-page {
   position: relative;
   background: url('assets/who-we-are-final.jpg') no-repeat top center / cover;
@@ -137,10 +134,6 @@ html {
   overflow: hidden;
   padding: 0 40px;
 }
-
-
-
-
 
 .who-we-are.full-page::before {
   content: "";
