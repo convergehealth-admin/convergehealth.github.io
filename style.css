@@ -86,10 +86,14 @@ nav ul li a {
 }
 
 .section-text h2 {
-  color: #49d3f7;
-  font-size: 2rem;
+  font-family: 'Avenir Next', 'Avenir', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 2.2rem;
+  color: #4eb1f5;
+  letter-spacing: 0.5px;
   margin-bottom: 25px;
 }
+
 
 .section-text p {
   font-size: 1.1rem;
