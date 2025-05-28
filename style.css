@@ -66,12 +66,14 @@ nav ul li a {
 
 
 .hero-text p {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.25rem;      /* up from 1.1rem */
+  line-height: 1.8;
   font-weight: 400;
-  font-size: 1.1rem;
-  line-height: 1.6;
   color: white;
+  margin-bottom: 28px;
 }
+
 
 
 .cta {
