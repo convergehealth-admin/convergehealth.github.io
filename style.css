@@ -87,6 +87,7 @@ nav ul li a {
   font-family: "helvetica-neue-lt-pro", sans-serif;
   font-size: 4rem;
   font-weight: 500;
+  font-weight: 450;
   line-height: 1.2;
   color: white;
 }
@@ -94,7 +95,7 @@ nav ul li a {
 
 .hero-text p {
   font-family: "helvetica-neue-lt-pro", sans-serif;
-  font-size: 2rem;
+  font-size: 1.2rem;
   line-height: 1.1;
   font-weight: 300;
   margin-bottom: 28px;
