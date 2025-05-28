@@ -99,3 +99,10 @@ nav ul li a {
 html {
   scroll-behavior: smooth;
 }
+
+.full-page {
+  padding: 100px 60px;
+  background: url('assets/background.png') no-repeat center center / cover;
+  color: white;
+  min-height: 100vh;
+}
