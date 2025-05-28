@@ -304,3 +304,8 @@ html, body {
   margin-bottom: 28px;
   color: white;
 }
+
+/* Tighter padding to match Canva spacing */
+.hero {
+  padding: 120px 40px 80px 60px; /* top, right, bottom, left */
+}
