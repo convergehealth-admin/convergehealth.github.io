@@ -153,6 +153,7 @@ html {
   pointer-events: none;
 }
 
+.cta {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 600;
 }
@@ -165,6 +166,7 @@ html, body {
 }
 
 
+.hero {
   position: relative;
   min-height: 100vh;
   background: url('assets/background.png') no-repeat bottom center / cover;
@@ -177,6 +179,7 @@ html, body {
 }
 
 
+html, body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -184,6 +187,7 @@ html, body {
 }
 
 
+.hero {
   position: relative;
   min-height: 100vh;
   background: url('assets/background.png') no-repeat bottom center / cover;
@@ -196,6 +200,7 @@ html, body {
 }
 
 
+.hero {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -222,6 +227,7 @@ html, body {
   height: auto;
 }
 
+.hero-text p {
   font-family: 'Manrope', sans-serif;
   font-size: 1.1rem;
   line-height: 1.6;
@@ -236,6 +242,7 @@ html, body {
   margin-bottom: 28px;
 }
 
+.hero {
   position: relative;
   background: url('assets/background.png') no-repeat center center / cover;
   color: white;
@@ -250,6 +257,7 @@ html, body {
 
 
 
+.hero-text p {
   font-family: 'Manrope', sans-serif;
   font-size: 1.25rem;
   line-height: 1.8;
@@ -259,6 +267,7 @@ html, body {
   color: white;
 }
 
+.hero {
   position: relative;
   background: url('assets/background.png') no-repeat center center / cover;
   color: white;
@@ -271,9 +280,11 @@ html, body {
 
 
 
+.hero .hero-text {
   max-width: 900px;
 }
 
+.hero-text p {
   font-family: 'Manrope', sans-serif;
   font-size: 1.25rem;
   line-height: 1.8;
@@ -283,27 +294,13 @@ html, body {
 }
 
 /* Tighter padding to match Canva spacing */
+.hero {
   padding: 120px 40px 80px 60px; /* top, right, bottom, left */
 }
 
 
 .hero h1 {
   font-family: 'helvetica-now-text', sans-serif;
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 1.2;
-  color: white;
-}
-
-.logo span {
-  font-family: 'Avenir LT Pro', 'Avenir', sans-serif;
-  font-weight: 700;
-  font-size: 1.1rem;
-  line-height: 1.2;
-}
-
-.hero h1 {
-  font-family: 'helvetica-now-text', Helvetica, Arial, sans-serif;
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.2;
