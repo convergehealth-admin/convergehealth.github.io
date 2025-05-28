@@ -106,3 +106,7 @@ html {
   color: white;
   min-height: 100vh;
 }
+
+.who-we-are.full-page {
+  background: url('assets/who-we-are-bg.png') no-repeat center center / cover;
+}
