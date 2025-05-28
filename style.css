@@ -1,7 +1,7 @@
 /* Nunito Sans loaded via <link> in HTML head */
 body {
   margin: 0;
-  font-family: 'Avenir', 'Lato', 'Helvetica Neue', 'helvetica-now-text',Helvetica, Arial, sans-serif;
+  font-family: 'Avenir LT Pro', 'helvetica-neue-lt-pro', Helvetica, Arial, sans-serif;
   color: white;
   background: url('assets/background.png') no-repeat center center / cover;
 }
@@ -21,6 +21,14 @@ body {
   font-weight: bold;
   font-size: 1.1rem;
 }
+
+.logo span {
+  font-family: "Avenir LT Pro", "Avenir", sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
+
 
 .logo img {
   width: 50px;
@@ -53,10 +61,11 @@ nav ul li a {
   padding: 120px 0 60px 40px; /* top, right, bottom, left: minimal left padding */
 }
 
-.hero .hero-text {
+/* .hero .hero-text {
   max-width: 600px;
   margin: 0;
 }
+*/
 
 /* .hero h1 {
   font-family: 'Manrope', sans-serif;
@@ -66,21 +75,34 @@ nav ul li a {
   line-height: 1.3;
 }
 
+*/
+
+/* Tighter padding to match Canva spacing */
+.hero {
+  padding: 120px 40px 80px 60px; /* top, right, bottom, left */
+}
+
+
+.hero h1 {
+  font-family: "helvetica-neue-lt-pro", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: white;
+}
+
+
 .hero-text p {
-  font-family: 'Manrope', sans-serif;
+  font-family: "helvetica-neue-lt-pro", sans-serif;
   font-size: 1.25rem;
   line-height: 1.8;
   font-weight: 400;
   margin-bottom: 28px;
   color: white;
   max-width: 600px; /* Match h1 width */
-/* } */
+ } 
 
 
-/* Tighter padding to match Canva spacing */
-.hero {
-  padding: 120px 40px 80px 60px; /* top, right, bottom, left */
-}
 
 .cta {
   display: inline-block;
@@ -139,10 +161,6 @@ html {
 /* Ensure top anchoring for the who-we-are background */
 
 
-
-
-
-
 .who-we-are.full-page {
   position: relative;
   background: url('assets/who-we-are-final.jpg') no-repeat top center / cover;
@@ -165,7 +183,7 @@ html {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 600;
 }
-
+/*
 html, body {
   margin: 0;
   padding: 0;
@@ -186,7 +204,7 @@ html, body {
   color: white;
 }
 
-
+*/
 html, body {
   margin: 0;
   padding: 0;
@@ -194,23 +212,3 @@ html, body {
   background-color: #001933;
 }
 
-/* Tighter padding to match Canva spacing */
-.hero {
-  padding: 120px 40px 80px 60px; /* top, right, bottom, left */
-}
-
-
-.hero h1 {
-  font-family: 'helvetica-now-text', sans-serif;
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 1.2;
-  color: white;
-}
-
-.logo span {
-  font-family: 'Avenir LT Pro', 'Avenir', sans-serif;
-  font-weight: 700;
-  font-size: 1.1rem;
-  line-height: 1.2;
-}
