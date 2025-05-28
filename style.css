@@ -1,237 +1,38 @@
-/* Nunito Sans loaded via <link> in HTML head */
+
 body {
-  margin: 0;
-  font-family: 'Avenir', 'Lato', 'Helvetica Neue', 'helvetica-now-text',Helvetica, Arial, sans-serif;
-  color: white;
-  background: url('assets/background.png') no-repeat center center / cover;
+  font-family: "helvetica-now-text", sans-serif;
 }
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 60px;
-  background-color: #0a1a2f;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  color: #68bdf6;
-  font-weight: bold;
-  font-size: 1.1rem;
-}
-
-.logo img {
-  width: 50px;
-  margin-right: 12px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
-}
-
 
 .hero {
   position: relative;
   background: url('assets/background.png') no-repeat center center / cover;
   color: white;
+  padding: 120px 40px 80px 60px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: left;
   box-sizing: border-box;
-  padding: 120px 0 60px 40px; /* top, right, bottom, left: minimal left padding */
-}
-
-.hero .hero-text {
-  max-width: 600px;
-  margin: 0;
 }
 
 .hero h1 {
-  font-family: 'Manrope', sans-serif;
+  font-family: "helvetica-now-text", sans-serif;
   font-size: 3.2rem;
   font-weight: 700;
   margin-bottom: 24px;
   line-height: 1.3;
 }
 
-.hero-text p {
-  font-family: 'Manrope', sans-serif;
-  font-size: 1.25rem;
-  line-height: 1.8;
-  font-weight: 400;
-  margin-bottom: 28px;
-  color: white;
-  max-width: 600px; /* Match h1 width */
-}
-
-/* Tighter padding to match Canva spacing */
-.hero {
-  padding: 120px 40px 80px 60px; /* top, right, bottom, left */
-}
-
-.cta {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 12px 24px;
-  border: 2px solid #49d3f7;
-  color: #49d3f7;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  background: rgba(255, 255, 255, 0.05);
-  transition: all 0.3s ease;
-}
-
-.cta:hover {
-  background: #49d3f7;
-  color: #0a1a2f;
-}
-
-.who-we-are {
-  padding: 100px 60px;
-  background-color: rgba(0, 0, 0, 0.7);
-  background-blend-mode: overlay;
-  color: white;
-}
-
-.section-text {
-  max-width: 800px;
-}
-
-.section-text h2 {
-  color: #49d3f7;
-  font-size: 2rem;
-  margin-bottom: 25px;
-}
-
-.section-text p {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  margin-bottom: 20px;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.full-page {
-  padding: 100px 60px;
-  background: url('assets/background.png') no-repeat center center / cover;
-  color: white;
-  min-height: 100vh;
-}
-
-
-
-/* Ensure top anchoring for the who-we-are background */
-
-
-
-
-
-
-.who-we-are.full-page {
-  position: relative;
-  background: url('assets/who-we-are-final.jpg') no-repeat top center / cover;
-  color: white;
-  min-height: 100vh;
-  z-index: 0;
-  overflow: hidden;
-}
-
-.who-we-are.full-page::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(61, 139, 255, 0.4);
-  z-index: 1;
-  pointer-events: none;
-}
-
-.cta {
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 600;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  background-color: #001933;
-  height: 100%;
-}
-
-
-.hero {
-  position: relative;
-  min-height: 100vh;
-  background: url('assets/background.png') no-repeat bottom center / cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 120px 80px 60px 80px;
-  box-sizing: border-box;
-  color: white;
-}
-
-
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  background-color: #001933;
-}
-
-
-
-.hero {
-  position: relative;
-  background: url('assets/background.png') no-repeat center center / cover;
-  color: white;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
-  box-sizing: border-box;
-  padding: 120px 0 60px 40px; /* top, right, bottom, left: minimal left padding */
-}
-
 .hero .hero-text {
-  max-width: 600px;
-  margin: 0;
-}
-
-.hero h1 {
-  font-family: 'Manrope', sans-serif;
-  font-size: 3.2rem;
-  font-weight: 700;
-  margin-bottom: 24px;
-  line-height: 1.3;
+  max-width: 900px;
 }
 
 .hero-text p {
-  font-family: 'Manrope', sans-serif;
+  font-family: "helvetica-now-text", sans-serif;
   font-size: 1.25rem;
   line-height: 1.8;
   font-weight: 400;
   margin-bottom: 28px;
   color: white;
-  max-width: 600px; /* Match h1 width */
-}
-
-/* Tighter padding to match Canva spacing */
-.hero {
-  padding: 120px 40px 80px 60px; /* top, right, bottom, left */
 }
