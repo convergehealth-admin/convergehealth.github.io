@@ -164,3 +164,20 @@ html, body {
   padding: 0 40px;
   background-color: #001933;
 }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #001933;
+}
+
+.hero {
+  min-height: 100vh;
+  background: url('assets/background.png') no-repeat bottom center / cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
