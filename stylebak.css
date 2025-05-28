@@ -72,26 +72,8 @@ nav ul li a {
   background: #49d3f7;
   color: #0a1a2f;
 }
-
-.who-we-are {
-  padding: 100px 60px;
-  background-color: rgba(0, 0, 0, 0.7);
-  background-blend-mode: overlay;
-  color: white;
-}
-
-.section-text {
-  max-width: 800px;
-}
-
-.section-text h2 {
-  color: #49d3f7;
-  font-size: 2rem;
-  margin-bottom: 25px;
-}
-
-.section-text p {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  margin-bottom: 20px;
+.footer {
+  background-color: #0a1a2f;
+  padding: 40px 60px;
+  text-align: center;
 }
