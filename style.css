@@ -1,7 +1,6 @@
+/* Nunito Sans loaded via <link> in HTML head */
 body {
   margin: 0;
-  padding: 0;
-  background-color: #001933; /* match hero bg color */
   font-family: 'Avenir', 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: white;
   background: url('assets/background.png') no-repeat center center / cover;
@@ -45,20 +44,26 @@ nav ul li a {
   max-width: 800px;
 }
 
+
 .hero-text h1 {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 700;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
   font-size: 3rem;
   color: white;
   line-height: 1.2;
+  margin-bottom: 25px;
 }
+
 
 
 .hero-text p {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
   font-size: 1.1rem;
-  line-height: 1.7;
-  margin-bottom: 20px;
+  line-height: 1.6;
+  color: white;
 }
+
 
 .cta {
   display: inline-block;
@@ -87,18 +92,13 @@ nav ul li a {
 
 .section-text {
   max-width: 800px;
-  margin: 0;          /* remove default margin */
 }
 
 .section-text h2 {
-  font-family: 'Avenir Next', 'Avenir', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 2.2rem;
-  color: #4eb1f5;
-  letter-spacing: 0.5px;
+  color: #49d3f7;
+  font-size: 2rem;
   margin-bottom: 25px;
 }
-
 
 .section-text p {
   font-size: 1.1rem;
@@ -121,18 +121,18 @@ html {
 
 /* Ensure top anchoring for the who-we-are background */
 
+
+
+
+
+
 .who-we-are.full-page {
   position: relative;
   background: url('assets/who-we-are-final.jpg') no-repeat top center / cover;
   color: white;
   min-height: 100vh;
-  display: flex;
-  align-items: center;      /* vertical centering */
-  justify-content: center;  /* horizontal centering */
-  text-align: center;
   z-index: 0;
   overflow: hidden;
-  padding: 0 40px;
 }
 
 .who-we-are.full-page::before {
@@ -142,4 +142,25 @@ html {
   background-color: rgba(61, 139, 255, 0.4);
   z-index: 1;
   pointer-events: none;
+}
+
+.cta {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #001933;
+  height: 100%;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 40px;
+  background-color: #001933;
 }
