@@ -110,3 +110,10 @@ html {
 .who-we-are.full-page {
   background: url('assets/who-we-are-bg.png') no-repeat top center / cover;
 }
+
+/* Ensure top anchoring for the who-we-are background */
+.who-we-are.full-page {
+  background-position: top center !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
