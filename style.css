@@ -41,20 +41,23 @@ nav ul {
   gap: 25px;
 }
 
+/* === NAV ITEMS === */
 nav ul li a {
   text-decoration: none;
-  color: white;
+  color: rgba(255, 255, 255, 0.7); /* semi-transparent white */
   font-weight: 500;
   font-size: 0.95rem;
   letter-spacing: 0.6px;
   transition: opacity 0.2s ease;
 }
 
-nav ul li a:hover {
-  opacity: 0.8;
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #ffffff;  /* Full white on hover/focus */
 }
 
 nav ul li a.active {
+  color: #ffffff;  /* Ensure the current/active link stays fully white */
   font-weight: 700;
 }
 
