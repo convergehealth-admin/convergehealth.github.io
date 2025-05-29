@@ -207,3 +207,47 @@ html, body {
   color: #ffffff;
 }
 
+/* OUR SERVICES PAGE STYLES */
+body.our-services-page {
+  background-color: rgb(26, 42, 60);
+  color: white;
+}
+
+.our-services {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.our-services h2 {
+  font-size: 2.5rem;
+  color: #49d3f7; /* or whatever color your Canva h2 is */
+  margin-bottom: 3rem;
+  font-family: "helvetica-neue-lt-pro", sans-serif;
+  font-weight: 400;
+}
+
+.services-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.service-block {
+  max-width: 300px;
+  text-align: center;
+}
+
+.service-block img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.service-block p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-family: "helvetica-neue-lt-pro", sans-serif;
+  font-weight: 300;
+  color: white;
+}
