@@ -109,7 +109,7 @@ html, body {
   /* box-sizing: border-box; */
     /* Tighter padding to match Canva spacing */
   /* padding: 120px 40px 80px 60px; /* top, right, bottom, left */
-  padding: 0 0 250px 100px; /* top, right, bottom, left: minimal left padding */
+  padding: 0 0 300px 80px; /* top, right, bottom, left: minimal left padding */
 }
 
 
@@ -124,9 +124,9 @@ html, body {
 
 .hero-text p {
   font-family: "helvetica-neue-lt-pro", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   line-height: 1.2;
-  font-weight: 200;
+  font-weight: 100;
   margin-bottom: 28px;
   color: white;
   max-width: 600px; /* Match h1 width */
