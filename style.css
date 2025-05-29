@@ -1,32 +1,15 @@
 
 
 /* === LOGO AREA === */
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: #68bdf6; /* matches the light blue from Canva */
-}
-
-.logo img {
-  width: 50px;
-}
 
 .logo {
   display: flex;
   align-items: center;
   color: #2673af;
+  gap: 12px;
   /*font-weight: bold; */
-  font-size: 1.1rem;
+  /*font-size: 1.1rem; */
 }
-
-.logo span {
-  font-family: "Avenir LT Pro", "Avenir", sans-serif;
-  font-weight: 700;
-  font-size: 1.1rem;
-  line-height: 1.2;
-}
-
 
 .logo img {
   width: 60px;
