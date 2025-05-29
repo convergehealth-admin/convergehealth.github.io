@@ -148,43 +148,13 @@ html {
   scroll-behavior: smooth;
 }
 
-.full-page {
-  padding: 100px 60px;
-  background: url('assets/background.png') no-repeat center center / cover;
-  color: white;
-  min-height: 100vh;
-}
-
-
-
 
 
 .cta {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 600;
 }
-/*
-html, body {
-  margin: 0;
-  padding: 0;
-  background-color: #001933;
-  height: 100%;
-}
 
-
-.hero {
-  position: relative;
-  min-height: 100vh;
-  background: url('assets/background.png') no-repeat bottom center / cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 120px 80px 60px 80px;
-  box-sizing: border-box;
-  color: white;
-}
-
-*/
 
 html, body {
   margin: 0;
@@ -199,11 +169,12 @@ html, body {
 
 .who-we-are-page {
   position: relative;
-  background: url('who-we-are-final.jpg') no-repeat top center / cover;
+  background: url('assets/who-we-are-final.jpg') no-repeat top center / cover;
   min-height: 100vh;
   overflow: hidden;
   color: white;
   z-index: 0;
+
 }
 
 .who-we-are-page::before {
@@ -233,7 +204,7 @@ html, body {
 .who-we-are-page p {
   font-size: 18px;
   font-family: "helvetica-neue-lt-pro", sans-serif;
-  font-weight: 200;
-  line-height: 1.6;
+  font-weight: 100;
+  line-height: 1.7;
   color: #ffffff;
 }
