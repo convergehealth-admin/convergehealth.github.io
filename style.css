@@ -186,7 +186,8 @@ html, body {
   font-size: 2.5rem;
   margin-bottom: 25px; */
   font-size: 50px;
-  font-family: "helvetica-neue-lt-pro", sans-serif;
+  font-family: "avenir-next-lt-pro", sans-serif;
+  font-style: normal;
   font-weight: 200;
   color: #2673af;
   margin-bottom: 1.5rem;
@@ -197,10 +198,10 @@ html, body {
   font-size: 1.1rem;
   line-height: 1.7;
   margin-bottom: 20px; */
-  font-size: 24px;
-  font-family: "helvetica-neue-lt-pro", sans-serif;
+  font-size: 20px;
+  font-family: "avenir-next-lt-pro", sans-serif;
   font-weight: 100;
-  line-height: 1.7;
+  line-height: 1.5;
   color: #ffffff;
 }
 
