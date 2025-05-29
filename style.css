@@ -10,12 +10,63 @@ body {
 }
 */
 
+/* === NAVBAR STYLES === */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 60px;
-  background-color: #0a1a2f;
+  background-color: #0f243a;
+  padding: 1.2rem 2.5rem;
+  font-family: "helvetica-neue-lt-pro", sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* === LOGO AREA === */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #68bdf6; /* matches the light blue from Canva */
+}
+
+.logo img {
+  width: 50px;
+}
+
+.logo span {
+  font-family: "Avenir LT Pro", "Avenir", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+/* === NAV LINKS === */
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  transition: opacity 0.2s ease;
+}
+
+nav ul li a:hover {
+  opacity: 0.8;
+}
+
+nav ul li a.active {
+  font-weight: 700;
 }
 
 .logo {
@@ -37,18 +88,6 @@ body {
 .logo img {
   width: 50px;
   margin-right: 12px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
 }
 
 
