@@ -96,7 +96,7 @@ html, body {
   /*background: url('assets/background.png') no-repeat center center / cover;
   */
   background-image: url('assets/background.png');
-  /* background-size: cover;       /* ensures the image scales to fill the area */
+  background-size: cover;       /* ensures the image scales to fill the area */
   background-repeat: no-repeat;
   background-position: center right; /* push image further into frame */
 
