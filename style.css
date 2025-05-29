@@ -15,8 +15,8 @@
 .logo {
   display: flex;
   align-items: center;
-  color: #68bdf6;
-  font-weight: bold;
+  color: #2673af;
+  /*font-weight: bold; */
   font-size: 1.1rem;
 }
 
@@ -29,13 +29,13 @@
 
 
 .logo img {
-  width: 50px;
+  width: 60px;
   margin-right: 12px;
 }
 
 .logo span {
   font-family: "Avenir LT Pro", "Avenir", sans-serif;
-  font-weight: 700;
+  font-weight: 200;
   font-size: 1.2rem;
   line-height: 1.2;
 }
