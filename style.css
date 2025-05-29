@@ -142,6 +142,12 @@ html, body {
   font-weight: 600;
 }
 
+.cta-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
 /* WHO WE ARE — Page Styles */
 
 .who-we-are {
