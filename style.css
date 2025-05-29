@@ -96,7 +96,7 @@ html, body {
   /*background: url('assets/background.png') no-repeat center center / cover;
   */
   background-image: url('assets/background.png');
-  background-size: cover;       /* ensures the image scales to fill the area */
+  /* background-size: cover;       /* ensures the image scales to fill the area */
   background-repeat: no-repeat;
   background-position: center right; /* push image further into frame */
 
@@ -104,7 +104,7 @@ html, body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  /*justify-content: center; */
+  justify-content: center; /* center vertically */
   text-align: left;
   /* box-sizing: border-box; */
     /* Tighter padding to match Canva spacing */
@@ -166,7 +166,6 @@ html, body {
   justify-content: center;   /* center horizontally */
   align-items: center;       /* center vertically */
   min-height: 100vh;
-  position: relative;
   text-align: center;
   padding: 0 2rem;
   flex-direction: column;
