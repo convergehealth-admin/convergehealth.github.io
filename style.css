@@ -109,7 +109,7 @@ html, body {
   /* box-sizing: border-box; */
     /* Tighter padding to match Canva spacing */
   /* padding: 120px 40px 80px 60px; /* top, right, bottom, left */
-  padding: 120px 0 60px 40px; /* top, right, bottom, left: minimal left padding */
+  padding: 100px 0 150px 30px; /* top, right, bottom, left: minimal left padding */
 }
 
 
