@@ -136,7 +136,11 @@ html, body {
 
 .section-text {
   max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: left;
 }
+
 
 .section-text h2 {
   color: rgb(61,114,171);
@@ -151,13 +155,14 @@ html, body {
 }
 
 
-/* WHO WE ARE — Page Styles */
+/* WHO WE ARE — Page Styles 
 
-.who-we-are-page {
+.who-we-are {
   position: relative;
   background: url('assets/who-we-are-final.jpg') no-repeat center;
   background-size: cover;
   background-position-y: -175px; /* crop 175px from the top */
+  /*
   min-height: 100vh;
   color: white;
   overflow: hidden;
@@ -165,7 +170,7 @@ html, body {
 }
 
 
-.who-we-are-page::before {
+.who-we-are::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -173,15 +178,15 @@ html, body {
   z-index: 0;
 }
 
-.who-we-are-page main,
-.who-we-are-page .content {
+.who-we-are main,
+.who-we-are .content {
   position: relative;
   z-index: 1;
   text-align: center;
   padding: 4rem 2rem;
 }
 
-.who-we-are-page h2 {
+.who-we-are h2 {
   font-size: 32px;
   font-family: "helvetica-neue-lt-pro", sans-serif;
   font-weight: 400;
@@ -189,10 +194,11 @@ html, body {
   margin-bottom: 1.5rem;
 }
 
-.who-we-are-page p {
+.who-we-are p {
   font-size: 18px;
   font-family: "helvetica-neue-lt-pro", sans-serif;
   font-weight: 100;
   line-height: 1.7;
   color: #ffffff;
 }
+*/
