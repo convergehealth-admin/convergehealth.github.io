@@ -98,7 +98,7 @@ html, body {
   background-image: url('assets/background.png');
   background-size: cover;       /* ensures the image scales to fill the area */
   background-repeat: no-repeat;
-  background-position: center right; /* push image further into frame */
+  background-position: center center; /* push image further into frame */
 
   color: white;
   min-height: 100vh;
