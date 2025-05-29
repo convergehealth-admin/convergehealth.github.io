@@ -1,14 +1,4 @@
-/*
-body {
-  margin: 0;
-  font-family: 'Avenir LT Pro', 'helvetica-neue-lt-pro', Helvetica, Arial, sans-serif;
-  color: white;
-}
 
-.index-page {
-  background: url('assets/background.png') no-repeat center center / cover;
-}
-*/
 
 /* === NAVBAR STYLES === */
 .navbar {
@@ -114,22 +104,6 @@ html, body {
   padding: 120px 0 60px 40px; /* top, right, bottom, left: minimal left padding */
 }
 
-/* .hero .hero-text {
-  max-width: 600px;
-  margin: 0;
-}
-*/
-
-/* .hero h1 {
-  font-family: 'Manrope', sans-serif;
-  font-size: 3.2rem;
-  font-weight: 700;
-  margin-bottom: 24px;
-  line-height: 1.3;
-}
-
-*/
-
 
 .hero h1 {
   font-family: "helvetica-neue-lt-pro", sans-serif;
@@ -208,48 +182,18 @@ html, body {
 
 /* WHO WE ARE — Page Styles */
 
-.who-we-are-page {
+.who-we-are {
   position: relative;
   background: url('assets/who-we-are-final.jpg') no-repeat center;
   background-size: cover;
   background-position-y: -175px; /* crop 175px from the top */
-  /*
+  display: flex;
+  justify-content: center;   /* center horizontally */
+  align-items: center;       /* center vertically */
   min-height: 100vh;
-  color: white;
-  overflow: hidden;
-  z-index: 0;
-}
-
-
-.who-we-are::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 23, 50, 0.65);
-  z-index: 0;
-}
-
-.who-we-are main,
-.who-we-are .content {
   position: relative;
-  z-index: 1;
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 0 2rem;
+  flex-direction: column;
 }
-
-.who-we-are h2 {
-  font-size: 32px;
-  font-family: "helvetica-neue-lt-pro", sans-serif;
-  font-weight: 400;
-  color: #2673af;
-  margin-bottom: 1.5rem;
-}
-
-.who-we-are p {
-  font-size: 18px;
-  font-family: "helvetica-neue-lt-pro", sans-serif;
-  font-weight: 100;
-  line-height: 1.7;
-  color: #ffffff;
-}
-*/
+ 
