@@ -184,7 +184,7 @@ html, body {
 
 .who-we-are {
   position: relative;
-  background: url('assets/who-we-are-final.jpg') no-repeat center;
+  background: url('assets/who-we-are-final3.jpg') no-repeat center;
   background-size: cover;
   background-position-y: -175px; /* crop 175px from the top */
   display: flex;
