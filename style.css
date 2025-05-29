@@ -1,10 +1,15 @@
 /* Nunito Sans loaded via <link> in HTML head */
+
 body {
   margin: 0;
   font-family: 'Avenir LT Pro', 'helvetica-neue-lt-pro', Helvetica, Arial, sans-serif;
   color: white;
+}
+
+.index-page {
   background: url('assets/background.png') no-repeat center center / cover;
 }
+
 
 .navbar {
   display: flex;
@@ -122,12 +127,6 @@ nav ul li a {
   color: #0a1a2f;
 }
 
-.who-we-are {
-  padding: 100px 60px;
-  background-color: rgba(0, 0, 0, 0.7);
-  background-blend-mode: overlay;
-  color: white;
-}
 
 .section-text {
   max-width: 800px;
@@ -195,27 +194,26 @@ html, body {
 }
 
 
-/* === WHO WE ARE PAGE === */
+
+/* WHO WE ARE — Page Styles */
 
 .who-we-are-page {
   position: relative;
-  background: url('who-we-are-final.jpg') no-repeat bottom center / cover;
+  background: url('who-we-are-final.jpg') no-repeat top center / cover;
   min-height: 100vh;
-  color: white;
   overflow: hidden;
+  color: white;
   z-index: 0;
 }
 
-/* Dark overlay for readability */
 .who-we-are-page::before {
   content: '';
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 23, 50, 0.65); /* Dark navy with higher opacity */
+  background-color: rgba(0, 23, 50, 0.65);
   z-index: 0;
 }
 
-/* Ensure content sits above overlay */
 .who-we-are-page main,
 .who-we-are-page .content {
   position: relative;
@@ -224,18 +222,15 @@ html, body {
   padding: 4rem 2rem;
 }
 
-/* Typography matching Canva */
-
-.who-we-are-hero h1 {
-  font-size: 30px;
+.who-we-are-page h2 {
+  font-size: 32px;
   font-family: "helvetica-neue-lt-pro", sans-serif;
   font-weight: 400;
-  line-height: 1.2;
-  color: #2673af; /* Updated to match Canva highlight */
+  color: #2673af;
+  margin-bottom: 1.5rem;
 }
 
-
-.who-we-are-hero p {
+.who-we-are-page p {
   font-size: 18px;
   font-family: "helvetica-neue-lt-pro", sans-serif;
   font-weight: 200;
