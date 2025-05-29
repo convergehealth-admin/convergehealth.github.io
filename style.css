@@ -143,9 +143,14 @@ html, body {
 
 
 .section-text h2 {
-  color: rgb(61,114,171);
+  /*color: rgb(61,114,171);
   font-size: 2.5rem;
-  margin-bottom: 25px;
+  margin-bottom: 25px; */
+  font-size: 32px;
+  font-family: "helvetica-neue-lt-pro", sans-serif;
+  font-weight: 400;
+  color: #2673af;
+  margin-bottom: 1.5rem;
 }
 
 .section-text p {
