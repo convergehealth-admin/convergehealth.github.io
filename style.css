@@ -29,7 +29,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #0f243a;
-  padding: 1.2rem 2.5rem;
+  padding: 0.4rem 2rem; /* top/bottom, left/right reducing vertical padding*/
   font-family: "helvetica-neue-lt-pro", sans-serif;
   position: sticky;
   top: 0;
