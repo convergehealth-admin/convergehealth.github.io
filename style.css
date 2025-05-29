@@ -169,13 +169,15 @@ html, body {
 
 .who-we-are-page {
   position: relative;
-  background: url('assets/who-we-are-final.jpg') no-repeat top center / cover;
+  background: url('assets/who-we-are-final.jpg') no-repeat center;
+  background-size: cover;
+  background-position-y: -175px; /* crop 175px from the top */
   min-height: 100vh;
-  overflow: hidden;
   color: white;
+  overflow: hidden;
   z-index: 0;
-
 }
+
 
 .who-we-are-page::before {
   content: '';
