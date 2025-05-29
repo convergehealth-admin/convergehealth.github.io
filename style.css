@@ -147,6 +147,33 @@ html, body {
   font-weight: 600;
 }
 
+/* WHO WE ARE — Page Styles */
+
+.who-we-are {
+  position: relative;
+  background: url('assets/who-we-are-final3.png') no-repeat center;
+  background-size: cover;
+  background-position-y: -175px; /* crop 175px from the top */
+  display: flex;
+  justify-content: center;   /* center horizontally */
+  align-items: center;       /* center vertically */
+  min-height: 100vh;
+  position: relative;
+  text-align: center;
+  padding: 0 2rem;
+  flex-direction: column;
+  overlfow: hidden; /* prevent overflow */
+}
+
+/* Adding overlay */
+.who-we-are::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 23, 50, 0.65); /* dark navy with ~65% opacity */
+  z-index: 0;
+}
+
 .section-text {
   max-width: 800px;
   margin: 0 auto;
@@ -179,21 +206,3 @@ html, body {
   color: #ffffff;
 }
 
-
-/* WHO WE ARE — Page Styles */
-
-.who-we-are {
-  position: relative;
-  background: url('assets/who-we-are-final3.png') no-repeat center;
-  background-size: cover;
-  background-position-y: -175px; /* crop 175px from the top */
-  display: flex;
-  justify-content: center;   /* center horizontally */
-  align-items: center;       /* center vertically */
-  min-height: 100vh;
-  position: relative;
-  text-align: center;
-  padding: 0 2rem;
-  flex-direction: column;
-}
- 
