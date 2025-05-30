@@ -143,7 +143,7 @@ html, body {
 }
 
 .cta-wrapper {
-  display: flex;
+  display: block;
   justify-content: center;
   margin-top: 2rem;
 }
@@ -319,4 +319,67 @@ body.our-services-page {
   font-weight: 100;
   line-height: 1.2;
   color: #ffffff;
+}
+
+
+/* Contact US Section */
+/* === CONTACT PAGE STYLING === */
+.contact-us-page {
+  background-color: #0f243a;
+  color: white;
+  font-family: "helvetica-neue-lt-pro", sans-serif;
+}
+
+.contact-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 100px 60px;
+  gap: 60px;
+}
+
+.contact-left {
+  flex: 1 1 50%;
+  max-width: 600px;
+}
+
+.contact-left h1 {
+  font-size: 40px;
+  color: #2673af;
+  margin-bottom: 60px;
+}
+
+.contact-section {
+  margin-bottom: 40px;
+}
+
+.contact-section h3 {
+  color: #2673af;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-section p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.contact-section a {
+  color: white;
+  text-decoration: underline;
+}
+
+.contact-right {
+  flex: 1 1 40%;
+  text-align: right;
+}
+
+.contact-right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
 }
