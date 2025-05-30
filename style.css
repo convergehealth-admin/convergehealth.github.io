@@ -273,12 +273,12 @@ body.our-services-page {
 }
 
 .why-choose h2 {
-   font-size: 53px;
+  font-size: 53px;
   font-family: "avenir-next-lt-pro", sans-serif;
   font-style: normal;
   font-weight: 200;
   color: #2673af;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .choose-grid {
@@ -291,7 +291,7 @@ body.our-services-page {
 .choose-block {
   background-color: transparent;
   border: 1px solid rgba(72, 173, 255, 0.4);
-  border-radius: 31px; /* ← This controls the roundness */
+  border-radius: 50px; /* ← This controls the roundness */
   padding: 40px 30px;
   width: 300px;
   max-width: 90vw;
