@@ -213,7 +213,7 @@ body.our-services-page {
 }
 
 .our-services h2 {
- font-size: 53px;
+  font-size: 53px;
   font-family: "avenir-next-lt-pro", sans-serif;
   font-style: normal;
   font-weight: 200;
@@ -221,6 +221,17 @@ body.our-services-page {
   margin-bottom: 1.5rem;
   
 }
+
+.service-card h3 {
+  font-family: "helvetica-neue-lt-pro", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #2673af; /* Matches Canva */
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
 
 .services-grid {
   display: flex;
