@@ -273,10 +273,12 @@ body.our-services-page {
 }
 
 .why-choose h2 {
-  font-size: 2.5rem;
-  color: #2673af;
+   font-size: 53px;
   font-family: "avenir-next-lt-pro", sans-serif;
-  margin-bottom: 50px;
+  font-style: normal;
+  font-weight: 200;
+  color: #2673af;
+  margin-bottom: 1.5rem;
 }
 
 .choose-grid {
