@@ -425,7 +425,7 @@ display: flex;
   transform: translateX(0%);
 }
 
-
+/*
 @media (max-width: 1024px) {
 .navbar {
     flex-direction: column;
@@ -466,6 +466,7 @@ padding: 1rem;
 width: 100%;
     margin-bottom: 2rem;
 }
+*/
 
 /* === BURGER MENU FOR TABLET & SMALL SCREENS === */
   .burger {
@@ -486,14 +487,13 @@ display: none;
     flex-direction: column;
     width: 100%;
     background-color: #0f243a;
-    padding: 1rem;
-padding: 0.75rem 1rem;
+    padding: 0.5rem 1rem;
 }
 
 }
 @media (max-width: 600px) {
 .navbar {
-  padding: 0.4rem 1rem; /* Reduce vertical spacing */
+  padding: 0.3rem 1rem; /* Reduce vertical spacing */
 }
 
 .hero {
@@ -520,6 +520,16 @@ p {
 font-size: 1rem;
     line-height: 1.5;
 }
+
+.logo img {
+  width: 36px;
+}
+
+.logo span {
+  font-size: 0.9rem;
+  line-height: 1.1;
+}
+
 
 .choose-grid,
   .service-grid,
