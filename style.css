@@ -483,3 +483,18 @@ body.our-services-page {
     gap: 1rem;
   }
 }
+
+@media (max-width: 400px) {
+  .cta {
+    font-size: 0.9rem;
+    padding: 10px 16px;
+  }
+
+  h1, h2 {
+    font-size: 1.3rem;
+  }
+
+  .navbar nav ul li a {
+    font-size: 0.9rem;
+  }
+}

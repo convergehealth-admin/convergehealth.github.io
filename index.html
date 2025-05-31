@@ -18,15 +18,16 @@
 
 <body class="home-page">
   <header class="navbar">
-    <!-- <div class="logo">
-      <img src="assets/logo.png" alt="Converge Health Logo" />
-      <span>Converge<br />Health</span>
-    </div> -->
     <a href="index.html" class="logo">
         <img src="assets/logo.png" alt="Converge Health Logo" />
         <span>Converge<br />Health</span>
     </a>
 
+     <button id="menu-toggle" aria-label="Toggle menu">
+         &#9776;
+     </button>
+
+  <div class="navbar-menu"></div>
     <nav>
       <ul>
         <li><a href="index.html" class="active">Home</a></li>
@@ -57,5 +58,14 @@
 
     </div>
   </main>
+
+  <script>
+  const toggle = document.getElementById('menu-toggle');
+  const nav = document.querySelector('.navbar nav');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
+  });
+</script>
 </body>
 </html>
