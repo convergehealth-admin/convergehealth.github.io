@@ -403,6 +403,29 @@ display: flex;
 display: flex;
 }
 
+/* Base styles for mobile menu */
+.mobile-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #0f243a;
+  width: 100%;
+  max-width: 300px;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 999;
+  display: none;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+/* When menu is open */
+.mobile-menu.open {
+  display: flex;
+  transform: translateX(0%);
+}
+
+
 @media (max-width: 1024px) {
 .navbar {
     flex-direction: column;
@@ -514,8 +537,5 @@ font-size: 1.3rem;
 font-size: 0.9rem;
 }
 
-}
-.burger {
-display: none;
-}
+
 
