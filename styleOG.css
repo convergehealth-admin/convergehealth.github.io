@@ -465,6 +465,10 @@ nav.open {
     margin: 0 auto;
   }
 
+  .burger {
+  display: none;
+  }
+
   /* === BURGER MENU FOR TABLET & SMALL SCREENS === */
   .burger {
     display: block;
@@ -568,6 +572,4 @@ nav.open {
   }
 }
 
-.burger {
-  display: none;
-}
+
