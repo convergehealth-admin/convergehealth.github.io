@@ -33,7 +33,7 @@
   background-color: #0f243a;
   padding: 0.4rem 2rem; /* top/bottom, left/right reducing vertical padding*/
   font-family: "helvetica-neue-lt-pro", sans-serif;
-  position: sticky;
+  position: relative;
   top: 0;
   z-index: 999;
 }
