@@ -15,6 +15,7 @@
 .logo img {
   width: 60px;
   margin-right: 12px;
+  display: block
 }
 
 .logo span {
