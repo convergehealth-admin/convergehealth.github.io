@@ -165,6 +165,8 @@ html, body {
   padding: 0 2rem;
   flex-direction: column;
   overflow: hidden; /* prevent overflow */
+  background-color: rgb(15, 36, 58); /* matches the dark background */
+
 }
 
 /* Adding overlay */
@@ -205,7 +207,9 @@ html, body {
 
 /* OUR SERVICES PAGE STYLES */
 body.our-services-page {
-  background-color: rgb(26, 42, 60);
+  /* background-color: rgb(26, 42, 60); */
+    background-color: rgb(15, 36, 58); /* matches the dark background */
+
   color: white;
 }
 
