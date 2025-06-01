@@ -64,7 +64,7 @@ font-size: 1rem;
 }
 
 /* === NAV ITEMS === */
-nav {
+nav.mobile-menu {
   position: fixed;
   top: 0;
   right: -100%;
@@ -613,6 +613,7 @@ width: 100%;
 
   nav.desktop-menu {
       display: none !important;
+      
     }
 
 
