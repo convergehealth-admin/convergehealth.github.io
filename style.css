@@ -26,7 +26,7 @@ font-size: 1rem;
 
 /* === NAVBAR STYLES === */
 .navbar {
-display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #0f243a;
@@ -37,18 +37,50 @@ display: flex;
   z-index: 999;
 }
 
+
+
+/* === NAV ITEMS === */
+nav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 80%;
+  max-width: 300px;
+  height: 100vh;
+  background-color: #0f243a;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 4rem 2rem;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+  transition: right 0.3s ease-in-out;
+  z-index: 999;
+}
+
+nav.open {
+  right: 0;
+}
+
+
 /* === NAV LINKS === */
 nav ul {
-display: flex;
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
   gap: 25px;
+  width: 100%;
 }
 
-/* === NAV ITEMS === */
+nav ul li {
+  margin-bottom: 1.5rem;
+}
+
+
 nav ul li a {
-text-decoration: none;
+  display: block;
+  text-decoration: none;
   color: rgba(255, 255, 255, 0.7); /* semi-transparent white */
   font-weight: 500;
   font-size: 0.95rem;
@@ -62,12 +94,12 @@ color: #ffffff;  /* Full white on hover/focus */
 }
 
 nav ul li a.active {
-color: #ffffff;  /* Ensure the current/active link stays fully white */
+  color: #ffffff;  /* Ensure the current/active link stays fully white */
   font-weight: 700;
 }
 
 html, body {
-margin: 0;
+  margin: 0;
   padding: 0;
   height: 100%;
   scroll-behavior: smooth;
@@ -75,7 +107,7 @@ margin: 0;
 }
 
 .hero {
-position: relative;
+  position: relative;
   /*background: url('assets/background.png') no-repeat center center / cover;
   */
   background-image: url('assets/background.png');
@@ -383,25 +415,7 @@ max-width: 100%;
 
 /* === RESPONSIVE STYLES === */
 /* === Base nav hidden and transition === */
-nav {
-display: none;
-  flex-direction: column;
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background-color: #0f243a;
-  width: 100%;
-  max-width: 300px;
-  transition: transform 0.3s ease-in-out;
-  transform: translateX(100%);
-  z-index: 1000;
-}
 
-nav.open {
-display: flex;
-  transform: translateX(0%);
-display: flex;
-}
 
 /* Base styles for mobile menu */
 .mobile-menu {
@@ -480,14 +494,6 @@ display: block;
     top: 1rem;
     right: 1.5rem;
     z-index: 1001;
-}
-
-nav {
-display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: #0f243a;
-    padding: 0.5rem 1rem;
 }
 
 }
