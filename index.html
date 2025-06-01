@@ -29,6 +29,9 @@
       &#9776;
     </button>
 
+    <div id="overlay" class="overlay"></div>
+
+
     <nav class="mobile-menu">
       <ul>
         <li><a href="index.html" class="active">Home</a></li>
@@ -61,12 +64,19 @@
   </main>
 
 <script>
-  const toggleButton = document.getElementById('menu-toggle');
-  const nav = document.querySelector('.mobile-menu');
+    const burger = document.querySelector('.burger');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const overlay = document.getElementById('overlay');
 
-  toggleButton.addEventListener('click', () => {
-    nav.classList.toggle('open');
-  });
+    burger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+      overlay.classList.toggle('show');
+    });
+
+    overlay.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      overlay.classList.remove('show');
+    });
 </script>
 
 
