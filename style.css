@@ -603,14 +603,14 @@ width: 100%;
      display: block;
      position: absolute;
      top: 50%;
-     right: 1rem;   /* ← adjust spacing to match header padding */
+     right: 0.5rem;   /* ← adjust spacing to match header padding */
      transform: translateY(-50%);
      z-index: 1001;
   }
   .burger.hide {
     display: none !important;
   }
-  
+
   nav.desktop-menu {
       display: none !important;
     }
