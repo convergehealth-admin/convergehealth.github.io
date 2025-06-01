@@ -119,6 +119,7 @@ html, body {
 /* Prevent body scroll when mobile menu is open */
 body.no-scroll {
   overflow: hidden;
+}
 
 .hero {
   position: relative;
