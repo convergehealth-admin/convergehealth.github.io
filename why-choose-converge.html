@@ -20,6 +20,14 @@
         <img src="assets/logo.png" alt="Converge Health Logo" />
         <span>Converge<br />Health</span>
     </a>
+
+
+     <button id="menu-toggle" class="burger" aria-label="Toggle menu">
+      &#9776;
+    </button>
+
+    <div id="overlay" class="overlay"></div>
+
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -71,5 +79,37 @@ technical clarity.</p>
       </div>
     </div>
   </main>
+
+
+  <script>
+ const burger = document.querySelector('.burger');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const overlay = document.getElementById('overlay');
+  const body = document.body;
+  const mobileLinks = document.querySelectorAll('.mobile-menu a');
+
+  burger.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    overlay.classList.toggle('show', isOpen);
+    body.classList.toggle('no-scroll', isOpen);
+    burger.classList.toggle('hide', isOpen);  // 👈 Hide burger when open
+  });
+
+  overlay.addEventListener('click', () => {
+    mobileMenu.classList.remove('open');
+    overlay.classList.remove('show');
+    body.classList.remove('no-scroll');
+    burger.classList.remove('hide');          // 👈 Show burger again
+  });
+
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      overlay.classList.remove('show');
+      body.classList.remove('no-scroll');
+      burger.classList.remove('hide');        // 👈 Show burger again
+    });
+  });
+</script>
 </body>
 </html>
