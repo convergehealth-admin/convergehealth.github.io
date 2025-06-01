@@ -57,7 +57,6 @@
         </p>
       </div>
     </div>
-
     <div class="contact-right">
       <img src="assets/worktogether.png" alt="Contact Us" />
     </div>
@@ -65,28 +64,28 @@
 
 
   <script>
- const burger = document.querySelector('.burger');
-  const mobileMenu = document.querySelector('.mobile-menu');
-  const overlay = document.getElementById('overlay');
-  const body = document.body;
-  const mobileLinks = document.querySelectorAll('.mobile-menu a');
+    const burger = document.querySelector('.burger');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const overlay = document.getElementById('overlay');
+    const body = document.body;
+    const mobileLinks = document.querySelectorAll('.mobile-menu a');
 
-  burger.addEventListener('click', () => {
-    const isOpen = mobileMenu.classList.toggle('open');
-    overlay.classList.toggle('show', isOpen);
-    body.classList.toggle('no-scroll', isOpen);
-    burger.classList.toggle('hide', isOpen);  // 👈 Hide burger when open
+    burger.addEventListener('click', () => {
+        const isOpen = mobileMenu.classList.toggle('open');
+        overlay.classList.toggle('show', isOpen);
+        body.classList.toggle('no-scroll', isOpen);
+        burger.classList.toggle('hide', isOpen);  // 👈 Hide burger when open
   });
 
-  overlay.addEventListener('click', () => {
-    mobileMenu.classList.remove('open');
-    overlay.classList.remove('show');
-    body.classList.remove('no-scroll');
-    burger.classList.remove('hide');          // 👈 Show burger again
+    overlay.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        overlay.classList.remove('show');
+        body.classList.remove('no-scroll');
+        burger.classList.remove('hide');          // 👈 Show burger again
   });
 
-  mobileLinks.forEach(link => {
-    link.addEventListener('click', () => {
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
       mobileMenu.classList.remove('open');
       overlay.classList.remove('show');
       body.classList.remove('no-scroll');
