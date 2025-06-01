@@ -135,6 +135,7 @@ body.no-scroll {
   overflow: hidden;
 }
 
+
 .hero {
   position: relative;
   background-image: url('assets/background.png');
@@ -458,6 +459,10 @@ max-width: 100%;
   transform: translateX(0%);
 }
 
+.desktop-menu {
+  display: flex;
+}
+
 
 .overlay {
   position: fixed;
@@ -609,11 +614,14 @@ width: 100%;
     display: none !important;
   }
 
+ 
   nav.desktop-menu {
-      display: none !important;
-      
-    }
+    display: none !important;
+  }
 
+  nav.mobile-menu {
+    display: flex;
+  }
 
   nav.mobile-menu ul {
     display: flex;
@@ -634,6 +642,14 @@ width: 100%;
      padding: 0.25rem 0;  /* ← reduce padding */
      font-size: 1rem;      /* ← slightly smaller font */
   }
+
+.desktop-menu {
+  display: none !important;
+}
+
+.mobile-menu {
+  display: flex;
+}
 
 }
 
