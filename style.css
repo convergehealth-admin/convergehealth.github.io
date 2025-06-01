@@ -559,10 +559,11 @@ gap: 1rem;
 .burger {
     display: block;
     position: absolute;
-    top: 1rem;
+    top: 50%;
     right: 1.5rem;
+    transform: translateY(-50%);
  }
- 
+
 .mobile-menu {
     display: flex;
   }
