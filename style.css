@@ -433,7 +433,7 @@ max-width: 100%;
   z-index: 999;
   display: none;
   flex-direction: column;
-  padding: 1.5rem 0.75rem; /* top/bottom, left/right — tighter horizontal space */
+  padding: 1.2rem 0.25rem; /* top/bottom, left/right — tighter horizontal space */
   box-shadow: -2px 0 8px rgba(0, 0, 0, 0.5);  /* optional shadow for depth */
 }
 
@@ -591,10 +591,6 @@ width: 100%;
      transform: translateY(-50%);
      z-index: 1001;
   }
-
-  .mobile-menu {
-      display: flex;
-    }
 
   nav.desktop-menu {
       display: none !important;
