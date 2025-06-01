@@ -414,9 +414,6 @@ max-width: 100%;
   border-radius: 4px;
 }
 
-/* === RESPONSIVE STYLES === */
-/* === Base nav hidden and transition === */
-
 
 /* Base styles for mobile menu */
 .mobile-menu {
@@ -439,6 +436,8 @@ max-width: 100%;
   display: flex;
   transform: translateX(0%);
 }
+/* === RESPONSIVE STYLES === */
+/* === Base nav hidden and transition === */
 
 /*
 @media (max-width: 1024px) {
@@ -501,79 +500,99 @@ width: 100%;
 */
 
 @media (max-width: 767px) {
-.navbar {
-  padding: 0.3rem 1rem; /* Reduce vertical spacing */
-}
+  .navbar {
+    padding: 0.3rem 1rem; /* Reduce vertical spacing */
+  }
 
-.hero {
-  padding: 0 1rem 3rem 1rem; /* balanced padding left/right */
-  text-align: left;
-}
+  .hero {
+    padding: 0 1rem 3rem 1rem; /* balanced padding left/right */
+    text-align: left;
+  }
 
-.hero-text h1 {
-  font-size: 2.5rem;
-  line-height: 1.2;
-}
+  .hero-text h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
 
-.hero-text p {
-  font-size: 1.3rem;
-  line-height: 1.5;
-  max-width: 100%;
-}
-
-h2 {
-    font-size: 1.6rem;
-}
-
-p {
-font-size: 1rem;
+  .hero-text p {
+    font-size: 1.3rem;
     line-height: 1.5;
-}
+    max-width: 100%;
+  }
 
-.logo img {
-  width: 36px;
-}
+  h2 {
+      font-size: 1.6rem;
+  }
 
-.logo span {
-  font-size: 1.2rem;
-  line-height: 1.1;
-}
+  p {
+  font-size: 1rem;
+      line-height: 1.5;
+  }
+
+  .logo img {
+    width: 36px;
+  }
+
+  .logo span {
+    font-size: 1.2rem;
+    line-height: 1.1;
+  }
 
 
-.choose-grid,
-  .service-grid,
-  .contact-grid {
-display: block;
-}
+  .choose-grid,
+    .service-grid,
+    .contact-grid {
+  display: block;
+  }
 
-.contact-form input,
-  .contact-form textarea {
-font-size: 1rem;
-    padding: 10px;
-}
+  .contact-form input,
+    .contact-form textarea {
+  font-size: 1rem;
+      padding: 10px;
+  }
 
-.contact-form {
-gap: 1rem;
-}
+  .contact-form {
+  gap: 1rem;
+  }
 
-.burger {
+  .burger {
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 0.5rem;
+      transform: translateY(-50%);
+  }
+
+  .mobile-menu {
+      display: flex;
+    }
+
+  nav.desktop-menu {
+      display: none !important;
+    }
+
+
+  nav.mobile-menu ul {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 1.5rem;
+      padding: 0;
+      margin: 0;
+    }
+
+  nav.mobile-menu ul li {
+    width: 100%;
+  }
+
+  nav.mobile-menu ul li a {
     display: block;
-    position: absolute;
-    top: 50%;
-    right: 0.5rem;
-    transform: translateY(-50%);
- }
-
-.mobile-menu {
-    display: flex;
-  }
-
-nav.desktop-menu {
-    display: none !important;
+    width: 100%;
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
   }
 
 }
-
 
 /*
 @media (max-width: 400px) {
