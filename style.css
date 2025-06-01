@@ -497,17 +497,17 @@ display: none;
 }
 
 .hero {
-  padding: 0 1.5rem 3rem 1.5rem; /* Equal left and right padding */
+  padding: 0 1rem 3rem 1rem; /* balanced padding left/right */
   text-align: left;
 }
 
 .hero-text h1 {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   line-height: 1.2;
 }
 
 .hero-text p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.5;
   max-width: 100%;
 }
