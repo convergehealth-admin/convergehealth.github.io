@@ -20,10 +20,19 @@
         <img src="assets/logo.png" alt="Converge Health Logo" />
         <span>Converge<br />Health</span>
     </a>
-     <nav>
+
+
+     <button id="menu-toggle" class="burger" aria-label="Toggle menu">
+      &#9776;
+    </button>
+
+    <div id="overlay" class="overlay"></div>
+
+
+    <nav class="mobile-menu">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="who-we-are.html" class="active">Who We Are</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="who-we-are.html">Who We Are</a></li>
         <li><a href="our-services.html" >Our Services</a></li>
         <li><a href="why-choose-converge.html">Why Choose Converge</a></li>
         <li><a href="contact-us.html">Contact Us</a></li>
@@ -47,6 +56,26 @@
       </p>
     </div>
   </main>
+
+  <script>
+  const burger = document.querySelector('.burger');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const overlay = document.getElementById('overlay');
+  const body = document.body;
+
+  burger.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    overlay.classList.toggle('show');
+    body.classList.toggle('no-scroll', isOpen);
+  });
+
+  overlay.addEventListener('click', () => {
+    mobileMenu.classList.remove('open');
+    overlay.classList.remove('show');
+    body.classList.remove('no-scroll');
+  });
+</script>
+
 </body>
 </html>
 
