@@ -114,6 +114,8 @@ html, body {
   height: 100%;
   scroll-behavior: smooth;
   background-color: #001933;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Prevent body scroll when mobile menu is open */
@@ -148,7 +150,7 @@ body.no-scroll {
   font-family: "helvetica-lt-pro", sans-serif;
   font-size: 1.5rem;
   line-height: 1.2;
-  font-weight: 100;
+  font-weight: 200;
   margin-bottom: 28px;
   color: white;
   max-width: 600px; /* Match h1 width */
@@ -230,7 +232,7 @@ font-size: 53px;
 .section-text p {
 font-size: 22px;
   font-family: "avenir-next-lt-pro", sans-serif;
-  font-weight: 100;
+  font-weight: 200;
   line-height: 1.5;
   color: #ffffff;
 }
@@ -277,7 +279,7 @@ width: 100%;
 .service-block p {
 font-size: 20px;
   font-family: "avenir-next-lt-pro", sans-serif;
-  font-weight: 100;
+  font-weight: 200;
   line-height: 1.2;
   color: #ffffff;
 }
@@ -286,7 +288,7 @@ font-size: 20px;
 font-family: "avenir-next-lt-pro", sans-serif;
   font-size: 1.60rem;
   font-style: normal;
-  font-weight: 100;
+  font-weight: 200;
   color: #2673af; /* Matches Canva */
   margin-top: 20px;
   margin-bottom: 15px;
@@ -337,7 +339,7 @@ width: 94px;
 .choose-block h3 {
 font-size: 26px;
   font-family: "avenir-next-lt-pro", sans-serif;
-  font-weight: 100;
+  font-weight: 200;
   line-height: 1.2;
   color: #2673af;
 }
@@ -345,7 +347,7 @@ font-size: 26px;
 .choose-block p {
 font-size: 20px;
   font-family: "avenir-next-lt-pro", sans-serif;
-  font-weight: 100;
+  font-weight: 200;
   line-height: 1.2;
   color: #ffffff;
 }
@@ -390,7 +392,7 @@ text-transform: uppercase;
   letter-spacing: 1px;
    font-size: 26px;
   font-family: "avenir-next-lt-pro", sans-serif;
-  font-weight: 100;
+  font-weight: 200;
   line-height: 1.2;
   color: #2673af;
 }
@@ -398,7 +400,7 @@ text-transform: uppercase;
 .contact-section p {
 font-size: 20px;
   font-family: "avenir-next-lt-pro", sans-serif;
-  font-weight: 100;
+  font-weight: 200;
   line-height: 1.6;
   color: #ffffff;
 }
