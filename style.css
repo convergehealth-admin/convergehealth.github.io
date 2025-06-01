@@ -604,7 +604,7 @@ width: 100%;
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 1rem;       /* ← tighten from 1.5rem */
+    gap: 0.5rem;       /* ← tighten from 1.5rem */
     padding: 0;
     margin: 0;
     }
