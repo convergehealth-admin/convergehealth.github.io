@@ -116,6 +116,10 @@ html, body {
   background-color: #001933;
 }
 
+/* Prevent body scroll when mobile menu is open */
+body.no-scroll {
+  overflow: hidden;
+
 .hero {
   position: relative;
   background-image: url('assets/background.png');

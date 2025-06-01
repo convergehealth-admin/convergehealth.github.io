@@ -64,19 +64,22 @@
   </main>
 
 <script>
-    const burger = document.querySelector('.burger');
-    const mobileMenu = document.querySelector('.mobile-menu');
-    const overlay = document.getElementById('overlay');
+  const burger = document.querySelector('.burger');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const overlay = document.getElementById('overlay');
+  const body = document.body;
 
-    burger.addEventListener('click', () => {
-      mobileMenu.classList.toggle('open');
-      overlay.classList.toggle('show');
-    });
+  burger.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    overlay.classList.toggle('show');
+    body.classList.toggle('no-scroll', isOpen);
+  });
 
-    overlay.addEventListener('click', () => {
-      mobileMenu.classList.remove('open');
-      overlay.classList.remove('show');
-    });
+  overlay.addEventListener('click', () => {
+    mobileMenu.classList.remove('open');
+    overlay.classList.remove('show');
+    body.classList.remove('no-scroll');
+  });
 </script>
 
 
