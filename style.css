@@ -87,7 +87,27 @@ display: flex;
 }
 
 /* === NAV ITEMS === */
-
+   nav.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 300px;
+    height: 100vh;
+    background-color: #0f243a;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 4rem 2rem;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease-in-out;
+    z-index: 10; /* 🧼 Reduced from 999 to limit stacking context scope */
+    will-change: right; /* ✅ Safe GPU hint */
+    transform: none; /* ✅ Prevents accidental GPU promotion */
+    -webkit-font-smoothing: antialiased;
+  }
+  
 nav.open {
   right: 0;
 }
@@ -559,26 +579,7 @@ width: 100%;
 */
 
 @media (max-width: 767px) {
-   nav.mobile-menu {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 80%;
-    max-width: 300px;
-    height: 100vh;
-    background-color: #0f243a;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 4rem 2rem;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-    transition: right 0.3s ease-in-out;
-    z-index: 10; /* 🧼 Reduced from 999 to limit stacking context scope */
-    will-change: right; /* ✅ Safe GPU hint */
-    transform: none; /* ✅ Prevents accidental GPU promotion */
-    -webkit-font-smoothing: antialiased;
-  }
+
   .navbar {
     padding: 0.3rem 1rem; /* Reduce vertical spacing */
   }
