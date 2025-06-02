@@ -16,97 +16,97 @@
 
 </head>
 
-<body class="home-page">
-  <header class="navbar">
-    <div id="overlay" class="overlay"></div>
+  <body class="home-page">
+    <header class="navbar">
+      <div id="overlay" class="overlay"></div>
 
-    <div class="nav-container">
+      <div class="nav-container">
 
-      <a href="index.html" class="logo">
-          <img src="assets/logo.png" alt="Converge Health Logo" />
-          <span>Converge<br />Health</span>
-      </a>
+        <a href="index.html" class="logo">
+            <img src="assets/logo.png" alt="Converge Health Logo" />
+            <span>Converge<br />Health</span>
+        </a>
 
 
-      <nav class="desktop-menu">
+        <nav class="desktop-menu">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="who-we-are.html">Who We Are</a></li>
+            <li><a href="our-services.html">Our Services</a></li>
+            <li><a href="why-choose-converge.html">Why Choose Converge</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <button id="menu-toggle" class="burger" aria-label="Toggle menu">
+          &#9776;
+        </button>
+
+      <nav class="mobile-menu">
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="who-we-are.html">Who We Are</a></li>
-          <li><a href="our-services.html">Our Services</a></li>
+          <li><a href="our-services.html" >Our Services</a></li>
           <li><a href="why-choose-converge.html">Why Choose Converge</a></li>
           <li><a href="contact-us.html">Contact Us</a></li>
         </ul>
       </nav>
+    </header>
 
-    </div>
+    <main class="hero">
+      <div class="hero-text">
+        <h1>Engineering Confidence<br />Into Your Next Stage</h1>
+        <p>
+          We help healthcare startups and PE-backed companies scale faster by optimizing product delivery, modernizing architecture, and aligning engineering and business goals.
+        </p>
+        <p>
+          Whether you’re preparing for growth, fundraising, or exit, Converge Health brings trusted executive leadership without the overhead of a full-time hire.
+        </p>
+        <div class="cta-wrapper">
+          <!--<a class="cta" href="mailto:info@convergehealth.net?subject=30-Day%20Tech%20Readiness%20Audit%20Inquiry&body=Hi%20Converge%20Health,%0A%0AI'm%20interested%20in%20the%2030-day%20audit.%20Please%20reach%20out%20to%20schedule%20a%20brief%20call.%0A%0AHere%E2%80%99s%20my%20phone%20number:%20%0A%0ABest%20date/time%20to%20reach%20me:%20%0A%0AThanks,%0A%0AMy%20Name:%20">🔍 Start with a 30-Day Tech Readiness Audit</a>
+        -->
+          <a class="cta" href="mailto:info@convergehealth.net?subject=30-Day%20Tech%20Readiness%20Audit%20Inquiry&body=Hi%20Converge%20Health,%0A%0AI'm%20interested%20in%20the%2030-day%20audit.%20Please%20reach%20out%20to%20schedule%20a%20brief%20call.%0A%0AHere's%20my%20phone%20number:%20%0A%0ABest%20date/time%20to%20reach%20me:%20%0A%0AThanks,%0A%0AMy%20Name:%20">
+          🔍 Start with a 30-Day Tech Readiness Audit
+          </a>
+        </div>
 
-    <button id="menu-toggle" class="burger" aria-label="Toggle menu">
-        &#9776;
-      </button>
-
-    <nav class="mobile-menu">
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="who-we-are.html">Who We Are</a></li>
-        <li><a href="our-services.html" >Our Services</a></li>
-        <li><a href="why-choose-converge.html">Why Choose Converge</a></li>
-        <li><a href="contact-us.html">Contact Us</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="hero">
-    <div class="hero-text">
-      <h1>Engineering Confidence<br />Into Your Next Stage</h1>
-      <p>
-        We help healthcare startups and PE-backed companies scale faster by optimizing product delivery, modernizing architecture, and aligning engineering and business goals.
-      </p>
-      <p>
-        Whether you’re preparing for growth, fundraising, or exit, Converge Health brings trusted executive leadership without the overhead of a full-time hire.
-      </p>
-      <div class="cta-wrapper">
-        <!--<a class="cta" href="mailto:info@convergehealth.net?subject=30-Day%20Tech%20Readiness%20Audit%20Inquiry&body=Hi%20Converge%20Health,%0A%0AI'm%20interested%20in%20the%2030-day%20audit.%20Please%20reach%20out%20to%20schedule%20a%20brief%20call.%0A%0AHere%E2%80%99s%20my%20phone%20number:%20%0A%0ABest%20date/time%20to%20reach%20me:%20%0A%0AThanks,%0A%0AMy%20Name:%20">🔍 Start with a 30-Day Tech Readiness Audit</a>
-      -->
-        <a class="cta" href="mailto:info@convergehealth.net?subject=30-Day%20Tech%20Readiness%20Audit%20Inquiry&body=Hi%20Converge%20Health,%0A%0AI'm%20interested%20in%20the%2030-day%20audit.%20Please%20reach%20out%20to%20schedule%20a%20brief%20call.%0A%0AHere's%20my%20phone%20number:%20%0A%0ABest%20date/time%20to%20reach%20me:%20%0A%0AThanks,%0A%0AMy%20Name:%20">
-        🔍 Start with a 30-Day Tech Readiness Audit
-        </a>
       </div>
+    </main>
 
-    </div>
-  </main>
+    <script>
+      const burger = document.querySelector('.burger');
+      const mobileMenu = document.querySelector('.mobile-menu');
+      const overlay = document.getElementById('overlay');
+      const body = document.body;
+      const mobileLinks = document.querySelectorAll('.mobile-menu a');
 
-<script>
- const burger = document.querySelector('.burger');
-  const mobileMenu = document.querySelector('.mobile-menu');
-  const overlay = document.getElementById('overlay');
-  const body = document.body;
-  const mobileLinks = document.querySelectorAll('.mobile-menu a');
+      burger.addEventListener('click', () => {
+        const isOpen = mobileMenu.classList.toggle('open');
+        overlay.classList.toggle('show', isOpen);
+        body.classList.toggle('no-scroll', isOpen);
+        burger.classList.toggle('hide', isOpen);  // 👈 Hide burger when open
+      });
 
-  burger.addEventListener('click', () => {
-    const isOpen = mobileMenu.classList.toggle('open');
-    overlay.classList.toggle('show', isOpen);
-    body.classList.toggle('no-scroll', isOpen);
-    burger.classList.toggle('hide', isOpen);  // 👈 Hide burger when open
-  });
+      overlay.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        overlay.classList.remove('show');
+        body.classList.remove('no-scroll');
+        burger.classList.remove('hide');          // 👈 Show burger again
+      });
 
-  overlay.addEventListener('click', () => {
-    mobileMenu.classList.remove('open');
-    overlay.classList.remove('show');
-    body.classList.remove('no-scroll');
-    burger.classList.remove('hide');          // 👈 Show burger again
-  });
-
-  mobileLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      mobileMenu.classList.remove('open');
-      overlay.classList.remove('show');
-      body.classList.remove('no-scroll');
-      burger.classList.remove('hide');        // 👈 Show burger again
-    });
-  });
-</script>
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.remove('open');
+          overlay.classList.remove('show');
+          body.classList.remove('no-scroll');
+          burger.classList.remove('hide');        // 👈 Show burger again
+        });
+      });
+    </script>
 
 
 
-</body>
+  </body>
 </html>

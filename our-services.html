@@ -15,129 +15,126 @@
   <link rel="stylesheet" href="https://use.typekit.net/jfe1dva.css">
 </head>
 <body class="our-services-page">
-  <header class="navbar">
-    <div id="overlay" class="overlay"></div>
+    <header class="navbar">
 
-    <div class="nav-container">
+        <div id="overlay" class="overlay"></div>
 
-        <a href="index.html" class="logo">
-            <img src="assets/logo.png" alt="Converge Health Logo" />
-            <span>Converge<br />Health</span>
-        </a>
+        <div class="nav-container">
 
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Converge Health Logo" />
+                <span>Converge<br />Health</span>
+            </a>
 
-       
+            <nav class="desktop-menu">
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="who-we-are.html" >Who We Are</a></li>
+                <li><a href="our-services.html" class="active">Our Services</a></li>
+                <li><a href="why-choose-converge.html">Why Choose Converge</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+            </nav>
+        </div>
 
-
-        <nav class="desktop-menu">
+        <button id="menu-toggle" class="burger" aria-label="Toggle menu">
+            &#9776;
+        </button>
+    
+        <nav class="mobile-menu">
         <ul>
-            <li><a href="index.html" >Home</a></li>
-            <li><a href="who-we-are.html" >Who We Are</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="who-we-are.html">Who We Are</a></li>
             <li><a href="our-services.html" class="active">Our Services</a></li>
             <li><a href="why-choose-converge.html">Why Choose Converge</a></li>
             <li><a href="contact-us.html">Contact Us</a></li>
         </ul>
         </nav>
-    </div>
+    </header>
 
-    <button id="menu-toggle" class="burger" aria-label="Toggle menu">
-        &#9776;
-    </button>
-    
-    <nav class="mobile-menu">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="who-we-are.html">Who We Are</a></li>
-        <li><a href="our-services.html" class="active">Our Services</a></li>
-        <li><a href="why-choose-converge.html">Why Choose Converge</a></li>
-        <li><a href="contact-us.html">Contact Us</a></li>
-      </ul>
-    </nav>
-  </header>
+    <main class="our-services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-block">
+                <img src="assets/Platform.png" alt="" role="presentation"/>
+                <h3>Platform Readiness & Scalability</h3>
 
-  <main class="our-services">
-    <h2>Our Services</h2>
-    <div class="services-grid">
-      <div class="service-block">
-        <img src="assets/Platform.png" alt="" role="presentation"/>
-        <h3>Platform Readiness & Scalability</h3>
+                <p>Refine your tech stack for
+                    growth. From cost-efficient
+                    cloud infrastructure and
+                    cybersecurity posture to
+                    documentation and dev
+                    process maturity, I help
+                    prepare your platform for scale
+                    — and eliminate surprises
+                    during diligence or integration.
+                </p>
+            </div>
+        
+            <div class="service-block">
+                <img src="assets/diligence-strategy3.png" alt="" role="presentation"/>
+                <h3>Value Story & Diligence Strategy</h3>
 
-        <p>Refine your tech stack for
-            growth. From cost-efficient
-            cloud infrastructure and
-            cybersecurity posture to
-            documentation and dev
-            process maturity, I help
-            prepare your platform for scale
-            — and eliminate surprises
-            during diligence or integration.
-        </p>
-      </div>
-    
-      <div class="service-block">
-        <img src="assets/diligence-strategy3.png" alt="" role="presentation"/>
-        <h3>Value Story & Diligence Strategy</h3>
+                <p>I help companies craft investor-
+                    grade narratives. That includes
+                    mapping proprietary workflows,
+                    showcasing AI/ML
+                    differentiation, and packaging
+                    the tech story in a way that
+                    increases confidence — and
+                    valuation — in M&A, funding, or
+                    client sales cycles.
+                </p>
+            </div>
 
-        <p>I help companies craft investor-
-            grade narratives. That includes
-            mapping proprietary workflows,
-            showcasing AI/ML
-            differentiation, and packaging
-            the tech story in a way that
-            increases confidence — and
-            valuation — in M&A, funding, or
-            client sales cycles.
-        </p>
+            <div class="service-block">
+                <img src="assets/Growth-Focused_Technology_Advisory.png" alt="" role="presentation"/>
+                <h3>Growth-Focused Technology Advisory</h3>
+
+                <p>Not sure where to invest next? I
+                    apply frameworks like Run |
+                    Grow | Transform to help CEOs
+                    and sponsors prioritize spend,
+                    optimize margin, and align tech
+                    resources to enterprise
+                    strategy. Every recommendation
+                    is built for action and
+                    accountability.
+                </p>
+            </div>
         </div>
-
-        <div class="service-block">
-            <img src="assets/Growth-Focused_Technology_Advisory.png" alt="" role="presentation"/>
-              <h3>Growth-Focused Technology Advisory</h3>
-
-            <p>Not sure where to invest next? I
-                apply frameworks like Run |
-                Grow | Transform to help CEOs
-                and sponsors prioritize spend,
-                optimize margin, and align tech
-                resources to enterprise
-                strategy. Every recommendation
-                is built for action and
-                accountability.
-            </p>
-        </div>
-    </div>
-  </main>
+    </main>
 
 
-  <script>
-    const burger = document.querySelector('.burger');
-    const mobileMenu = document.querySelector('.mobile-menu');
-    const overlay = document.getElementById('overlay');
-    const body = document.body;
-    const mobileLinks = document.querySelectorAll('.mobile-menu a');
+    <script>
+        const burger = document.querySelector('.burger');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const overlay = document.getElementById('overlay');
+        const body = document.body;
+        const mobileLinks = document.querySelectorAll('.mobile-menu a');
 
-    burger.addEventListener('click', () => {
-        const isOpen = mobileMenu.classList.toggle('open');
-        overlay.classList.toggle('show', isOpen);
-        body.classList.toggle('no-scroll', isOpen);
-        burger.classList.toggle('hide', isOpen);  // 👈 Hide burger when open
-  });
+        burger.addEventListener('click', () => {
+            const isOpen = mobileMenu.classList.toggle('open');
+            overlay.classList.toggle('show', isOpen);
+            body.classList.toggle('no-scroll', isOpen);
+            burger.classList.toggle('hide', isOpen);  // 👈 Hide burger when open
+        });
 
-    overlay.addEventListener('click', () => {
+        overlay.addEventListener('click', () => {
+            mobileMenu.classList.remove('open');
+            overlay.classList.remove('show');
+            body.classList.remove('no-scroll');
+            burger.classList.remove('hide');          // 👈 Show burger again
+        });
+
+        mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
         mobileMenu.classList.remove('open');
         overlay.classList.remove('show');
         body.classList.remove('no-scroll');
-        burger.classList.remove('hide');          // 👈 Show burger again
-  });
-
-    mobileLinks.forEach(link => {
-      link.addEventListener('click', () => {
-      mobileMenu.classList.remove('open');
-      overlay.classList.remove('show');
-      body.classList.remove('no-scroll');
-      burger.classList.remove('hide');        // 👈 Show burger again
-    });
-  });
-</script>
+        burger.classList.remove('hide');        // 👈 Show burger again
+        });
+        });
+    </script>
 </body>
 </html>
