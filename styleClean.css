@@ -121,7 +121,6 @@ html, body {
 }
 
 /* Remove problematic stacking contexts */
-.who-we-are::before,
 .why-choose::before,
 .our-services::before,
 .contact-layout::before {
