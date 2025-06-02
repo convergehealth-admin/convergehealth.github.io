@@ -12,8 +12,8 @@ html, body {
 
 h1, h2, h3, p, a, span {
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: auto;
+  text-rendering: optimizeSpeed;
 }
 
 
@@ -238,7 +238,7 @@ nav ul li a.active {
   content: '';
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 23, 50, 0.65); /* dark navy with ~65% opacity */
+  background-color: rgba(0, 23, 50, 0.50); /* dark navy with ~65% opacity */
   z-index: 1; /*bheind content, above background */
 } 
 
@@ -253,6 +253,9 @@ nav ul li a.active {
   transform: none;
   will-change: auto;
   z-index: 2;
+  -webkit-font-smoothing: subpixel-antialiased; /* Improve text rendering */
+  -moz-osx-font-smoothing: auto; /* Default Mozilla smoothing */
+  text-rendering: optimizeSpeed; /* Prioritize clarity */
 }
 
 .section-text h2 {
