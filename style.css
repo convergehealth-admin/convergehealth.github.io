@@ -43,7 +43,7 @@ display: flex;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.4rem 2rem;
+  padding: 0.4rem 1.5rem;
   font-family: "helvetica-neue-lt-pro", sans-serif;
 }
 
@@ -471,6 +471,14 @@ body.our-services-page {
 
 .desktop-menu {
   display: flex;
+  margin-left: 2rem; /* pushes it to the far right */
+}
+
+.desktop-menu ul {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
 }
 
 
