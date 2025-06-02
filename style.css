@@ -267,7 +267,6 @@ nav ul li a.active {
 
 /* OUR SERVICES PAGE STYLES */
 body.our-services-page {
-/* background-color: rgb(26, 42, 60); */
   background-color: rgb(15, 36, 58); /* matches the dark background */
   color: white;
 }
@@ -282,7 +281,7 @@ body.our-services-page {
   font-size: 53px;
   font-family: "avenir-next-lt-pro", sans-serif;
   font-style: normal;
-  font-weight: 200;
+  font-weight: 300;
   color: #2673af;
   margin-bottom: 1.5rem;
 }
@@ -308,7 +307,7 @@ body.our-services-page {
 .service-block p {
   font-size: 20px;
   font-family: "avenir-next-lt-pro", sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.2;
   color: #ffffff;
 }
@@ -317,7 +316,7 @@ body.our-services-page {
   font-family: "avenir-next-lt-pro", sans-serif;
   font-size: 1.60rem;
   font-style: normal;
-  font-weight: 200;
+  font-weight: 300;
   color: #2673af; /* Matches Canva */
   margin-top: 20px;
   margin-bottom: 15px;
