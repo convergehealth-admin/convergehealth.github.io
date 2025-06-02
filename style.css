@@ -170,7 +170,7 @@ body.no-scroll {
 }
 
 .cta {
-display: inline-block;
+  display: inline-block;
   margin-top: 30px;
   padding: 12px 24px;
   border: 2px solid #49d3f7;
@@ -180,28 +180,28 @@ display: inline-block;
   font-weight: 600;
   background: rgba(255, 255, 255, 0.05);
   transition: all 0.3s ease;
-font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: 600;
-display: inline-block;
-    margin: 0 auto;
+  display: inline-block;
+  margin: 0 auto;
 }
 
 .cta:hover {
-background: #49d3f7;
+  background: #49d3f7;
   color: #0a1a2f;
 }
 
 .cta-wrapper {
-display: block;
+  display: block;
   justify-content: center;
   margin-top: 2rem;
-text-align: center;
-    margin-top: 2rem;
+  text-align: center;
+  margin-top: 2rem;
 }
 
 /* WHO WE ARE — Page Styles */
 .who-we-are {
-position: relative;
+  position: relative;
   background: url('assets/who-we-are-final3.png') no-repeat center;
   background-size: cover;
   background-position-y: -175px; /* crop 175px from the top */
@@ -218,7 +218,7 @@ position: relative;
 
 /* Adding overlay */
 .who-we-are::before {
-content: '';
+  content: '';
   position: absolute;
   inset: 0;
   background-color: rgba(0, 23, 50, 0.65); /* dark navy with ~65% opacity */
@@ -226,7 +226,7 @@ content: '';
 }
 
 .section-text {
-max-width: 800px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 2rem 1rem;
   text-align: center;
@@ -253,17 +253,17 @@ font-size: 22px;
 /* OUR SERVICES PAGE STYLES */
 body.our-services-page {
 /* background-color: rgb(26, 42, 60); */
-    background-color: rgb(15, 36, 58); /* matches the dark background */
+  background-color: rgb(15, 36, 58); /* matches the dark background */
   color: white;
 }
 
 .our-services {
-padding: 4rem 2rem;
+  padding: 4rem 2rem;
   text-align: center;
 }
 
 .our-services h2 {
-font-size: 53px;
+  font-size: 53px;
   font-family: "avenir-next-lt-pro", sans-serif;
   font-style: normal;
   font-weight: 200;
@@ -272,25 +272,25 @@ font-size: 53px;
 }
 
 .services-grid {
-display: flex;
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 3rem;
 }
 
 .service-block {
-max-width: 300px;
+  max-width: 300px;
   text-align: center;
 }
 
 .service-block img {
-width: 100%;
+  width: 100%;
   height: auto;
   border-radius: 10px;
 }
 
 .service-block p {
-font-size: 20px;
+  font-size: 20px;
   font-family: "avenir-next-lt-pro", sans-serif;
   font-weight: 200;
   line-height: 1.2;
@@ -298,7 +298,7 @@ font-size: 20px;
 }
 
 .service-block h3 {
-font-family: "avenir-next-lt-pro", sans-serif;
+  font-family: "avenir-next-lt-pro", sans-serif;
   font-size: 1.60rem;
   font-style: normal;
   font-weight: 200;
@@ -311,14 +311,14 @@ font-family: "avenir-next-lt-pro", sans-serif;
 /* Why Choose Us Section */
 /* === WHY CHOOSE CONVERGE STYLES === */
 .why-choose {
-padding: 80px 40px;
+  padding: 80px 40px;
   background-color: rgb(15, 36, 58); /* matches the dark background */
   text-align: center;
   color: white;
 }
 
 .why-choose h2 {
-font-size: 53px;
+  font-size: 53px;
   font-family: "avenir-next-lt-pro", sans-serif;
   font-style: normal;
   font-weight: 200;
@@ -327,14 +327,14 @@ font-size: 53px;
 }
 
 .choose-grid {
-display: flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
 }
 
 .choose-block {
-background-color: transparent;
+  background-color: transparent;
   border: 1px solid rgba(72, 173, 255, 0.4);
   border-radius: 50px; /* ← This controls the roundness */
   padding: 40px 30px;
@@ -344,13 +344,13 @@ background-color: transparent;
 }
 
 .choose-block img {
-width: 94px;
+  width: 94px;
   height: auto;
   margin-bottom: 25px;
 }
 
 .choose-block h3 {
-font-size: 26px;
+  font-size: 26px;
   font-family: "avenir-next-lt-pro", sans-serif;
   font-weight: 200;
   line-height: 1.2;
@@ -358,7 +358,7 @@ font-size: 26px;
 }
 
 .choose-block p {
-font-size: 20px;
+  font-size: 20px;
   font-family: "avenir-next-lt-pro", sans-serif;
   font-weight: 200;
   line-height: 1.2;
@@ -368,13 +368,13 @@ font-size: 20px;
 /* Contact US Section */
 /* === CONTACT PAGE STYLING === */
 .contact-us-page {
-background-color: #0f243a;
+  background-color: #0f243a;
   color: white;
   font-family: "helvetica-neue-lt-pro", sans-serif;
 }
 
 .contact-layout {
-display: flex;
+ display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
@@ -383,12 +383,12 @@ display: flex;
 }
 
 .contact-left {
-flex: 1 1 50%;
+  flex: 1 1 50%;
   max-width: 600px;
 }
 
 .contact-left h1 {
-font-size: 53px;
+  font-size: 53px;
   font-family: "avenir-next-lt-pro", sans-serif;
   font-style: normal;
   font-weight: 200;
@@ -397,13 +397,13 @@ font-size: 53px;
 }
 
 .contact-section {
-margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .contact-section h3 {
-text-transform: uppercase;
+  text-transform: uppercase;
   letter-spacing: 1px;
-   font-size: 26px;
+  font-size: 26px;
   font-family: "avenir-next-lt-pro", sans-serif;
   font-weight: 200;
   line-height: 1.2;
@@ -411,7 +411,7 @@ text-transform: uppercase;
 }
 
 .contact-section p {
-font-size: 20px;
+  font-size: 20px;
   font-family: "avenir-next-lt-pro", sans-serif;
   font-weight: 200;
   line-height: 1.6;
@@ -419,17 +419,17 @@ font-size: 20px;
 }
 
 .contact-section a {
-color: white;
+  color: white;
   text-decoration: underline;
 }
 
 .contact-right {
-flex: 1 1 40%;
+  flex: 1 1 40%;
   text-align: right;
 }
 
 .contact-right img {
-max-width: 100%;
+  max-width: 100%;
   height: auto;
   border-radius: 4px;
 }
