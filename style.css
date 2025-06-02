@@ -699,11 +699,11 @@ font-size: 0.9rem;
 
 */
 
-@media (min-width: 768px) {
+@media (min-width: 768px) { 
   .desktop-menu {
     display: flex !important;
   }
-  
+
   .mobile-menu {
     display: none !important;
   }
