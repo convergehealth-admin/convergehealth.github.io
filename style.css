@@ -676,14 +676,6 @@ width: 100%;
      font-size: 1rem;      /* ← slightly smaller font */
   }
 
-  .desktop-menu {
-    display: none !important;
-  }
-
-  .mobile-menu {
-    display: flex;
-  }
-
 }
 
 /*
