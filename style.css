@@ -98,8 +98,6 @@ display: flex;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
     transition: right 0.3s ease-in-out;
     z-index: 10; /* 🧼 Reduced from 999 to limit stacking context scope */
-    will-change: right; /* ✅ Safe GPU hint */
-    -webkit-font-smoothing: antialiased;
   }
   
 nav.open {
@@ -243,9 +241,6 @@ nav ul li a.active {
   text-align: center;
   position: relative;
   z-index: 2;
-  -webkit-font-smoothing: antialiased; /* Improve text rendering */
-  -moz-osx-font-smoothing: auto; /* Default Mozilla smoothing */
-  text-rendering: optimizeSpeed; /* Prioritize clarity */
 }
 
 .section-text h2 {
