@@ -238,7 +238,7 @@ nav ul li a.active {
   content: '';
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 23, 50, 0.40); /* dark navy with ~65% opacity */
+  background-color: rgba(0, 23, 50, 0.65); /* dark navy with ~65% opacity */
   z-index: 1; /*bheind content, above background */
 } 
 
@@ -249,8 +249,7 @@ nav ul li a.active {
   padding: 2rem 1rem;
   text-align: center;
   position: relative;
-  -webkit-font-smoothing: antialiased;
-  transform: none;
+  transform: translateZ(0);
   will-change: auto;
   z-index: 2;
   -webkit-font-smoothing: antialiased; /* Improve text rendering */
