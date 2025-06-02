@@ -73,22 +73,39 @@
     <script>
       const burger = document.querySelector('.burger');
       const mobileMenu = document.querySelector('.mobile-menu');
-      const overlay = document.getElementById('overlay');
+      const desktopMenu = document.querySelector('.desktop-menu');
+      const overlay = document.querySelector('.overlay');
       const body = document.body;
       const mobileLinks = document.querySelectorAll('.mobile-menu a');
+
+      function setMenuState() { 
+        if (window.innerWidth >= 768) {
+          desktopMenu.style.display = 'flex';
+          mobileMenu.style.display = 'none';
+          mobileMenu.classList.remove('open');
+          burger.style.display = 'none';
+          overlay.classList.remove('show');
+          body.classList.remove('no-scroll');
+          burger.classList.remove('hide');
+        } else {
+          desktopMenu.style.display = 'none';
+          mobileMenu.style.display = 'flex';
+          burger.style.display = 'block';
+        }
+      }
 
       burger.addEventListener('click', () => {
         const isOpen = mobileMenu.classList.toggle('open');
         overlay.classList.toggle('show', isOpen);
         body.classList.toggle('no-scroll', isOpen);
-        burger.classList.toggle('hide', isOpen);  // 👈 Hide burger when open
+        burger.classList.toggle('hide', isOpen);
       });
 
       overlay.addEventListener('click', () => {
         mobileMenu.classList.remove('open');
         overlay.classList.remove('show');
         body.classList.remove('no-scroll');
-        burger.classList.remove('hide');          // 👈 Show burger again
+        burger.classList.remove('hide');
       });
 
       mobileLinks.forEach(link => {
@@ -96,10 +113,14 @@
           mobileMenu.classList.remove('open');
           overlay.classList.remove('show');
           body.classList.remove('no-scroll');
-          burger.classList.remove('hide');        // 👈 Show burger again
+          burger.classList.remove('hide');
         });
       });
-    </script>
+
+      // Set initial state and handle resize
+      setMenuState();
+      window.addEventListener('resize', setMenuState);
+      </script>
 
   </body>
 </html>
