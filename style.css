@@ -227,11 +227,11 @@ body.no-scroll {
 
 /* Adding overlay */
 .who-we-are::before {
-  content: '';
+  content: none;
   position: absolute;
   inset: 0;
   background-color: rgba(0, 23, 50, 0.65); /* dark navy with ~65% opacity */
-  z-index: 1;
+  z-index: 0;
 } 
 
 .section-text {
@@ -326,7 +326,7 @@ body.our-services-page {
   text-align: center;
   color: white;
   position: relative;
-  z-index: 0;
+  z-index: 100;
 }
 
 .why-choose h2 {
