@@ -6,12 +6,8 @@ html, body {
   background-color: #001933;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+  text-rendering: optimizeLegibility;
 
-h1, h2, h3, p, a, span {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: auto;
-  text-rendering: optimizeSpeed;
 }
 
 
