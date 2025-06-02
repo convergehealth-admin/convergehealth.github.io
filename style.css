@@ -220,6 +220,9 @@ nav ul li a.active {
   flex-direction: column;
   overflow: hidden; /* prevent overflow */
   background-color: rgb(15, 36, 58); /* matches the dark background */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 /* Adding overlay */
@@ -227,8 +230,8 @@ nav ul li a.active {
   content: '';
   position: absolute;
   inset: 0;
-  background-color: #001733;   /* ✅ solid color instead of rgba */
-  opacity: 0.65;               /* ✅ use opacity here, not in color */
+  background-color: rgba(0, 23, 50, 0.65);
+  opacity: 1;
   z-index: 0;                  /* ✅ behind everything */
 } 
 
@@ -240,6 +243,9 @@ nav ul li a.active {
   text-align: center;
   position: relative;
   z-index: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 .section-text h2 {
