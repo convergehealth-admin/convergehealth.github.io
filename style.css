@@ -471,7 +471,6 @@ body.our-services-page {
 
 .desktop-menu {
   display: flex;
-  margin-left: 2rem; /* pushes it to the far right */
 }
 
 .desktop-menu ul {
