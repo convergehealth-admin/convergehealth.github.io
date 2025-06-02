@@ -1,0 +1,704 @@
+/* === LOGO AREA === */
+.logo {
+display: flex;
+  align-items: center;
+  color: #2673af;
+  gap: 6px;
+  text-decoration: none;
+  /*font-weight: bold; */
+  /*font-size: 1.1rem; */
+}
+
+.logo img {
+  width: 60px;
+  margin-right: 12px;
+  display: block;
+}
+
+.logo span {
+  font-family: "Avenir LT Pro", "Avenir", sans-serif;
+  font-weight: 200;
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
+
+/* === NAVBAR STYLES === */
+.navbar {
+  position: fixed;               /* Keep it fixed on scroll */
+  top: 0;
+  left: 0;
+  width: 100%;                   /* Full width */
+  background-color: #0f243a;     /* Match your current style */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 2rem;
+  font-family: "helvetica-neue-lt-pro", sans-serif;
+  z-index: 1000;                 /* On top of other content */
+
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-left: 0px;  /* ✅ minimal left padding */
+  padding-right: 30px; /* still give nav room on right */
+  max-width: none;     /* ✅ remove if it exists */
+  margin: 0;           /* ✅ no centering */
+}
+
+
+.burger {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.burger.hide {
+  display: none !important;
+}
+
+/* === NAV ITEMS === */
+nav.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 80%;
+  max-width: 300px;
+  height: 100vh;
+  background-color: #0f243a;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 4rem 2rem;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+  transition: right 0.3s ease-in-out;
+  z-index: 999;
+}
+
+nav.open {
+  right: 0;
+}
+
+
+/* === NAV LINKS === */
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 25px;
+}
+
+nav ul li {
+  margin-bottom: 1.5rem;
+}
+
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7); /* semi-transparent white */
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.6px;
+  transition: opacity 0.2s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+color: #ffffff;  /* Full white on hover/focus */
+}
+
+nav ul li a.active {
+  color: #ffffff;  /* Ensure the current/active link stays fully white */
+  font-weight: 700;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  scroll-behavior: smooth;
+  background-color: #001933;
+
+}
+
+body, h1, h2, h3, p, a, span {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+
+/* Prevent body scroll when mobile menu is open */
+body.no-scroll {
+  overflow: hidden;
+}
+
+
+.hero {
+  position: relative;
+  background-image: url('assets/background.png');
+  background-size: cover;       /* ensures the image scales to fill the area */
+  background-repeat: no-repeat;
+  background-position: center center; /* push image further into frame */
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* center vertically */
+  text-align: left;
+  padding: 0 0 500px 75px; /* top, right, bottom, left: minimal left padding */
+  z-index: 100;
+}
+
+.hero-text h1 {
+  font-family: "helvetica-lt-pro", sans-serif;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.1;
+  color: white;
+}
+
+.hero-text p {
+  font-family: "helvetica-lt-pro", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  font-weight: 200;
+  margin-bottom: 28px;
+  color: white;
+  max-width: 600px; /* Match h1 width */
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 24px;
+  border: 2px solid #49d3f7;
+  color: #49d3f7;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.cta:hover {
+  background: #49d3f7;
+  color: #0a1a2f;
+}
+
+.cta-wrapper {
+  display: block;
+  justify-content: center;
+  margin-top: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* WHO WE ARE — Page Styles */
+.who-we-are {
+  position: relative;
+  background: url('assets/who-we-are-final3.png') no-repeat center;
+  background-size: cover;
+  background-position-y: -175px; /* crop 175px from the top */
+  display: flex;
+  justify-content: center;   /* center horizontally */
+  align-items: center;       /* center vertically */
+  min-height: 100vh;
+  text-align: center;
+  padding: 0 2rem;
+  flex-direction: column;
+  overflow: hidden; /* prevent overflow */
+  background-color: rgb(15, 36, 58); /* matches the dark background */
+}
+
+/* Adding overlay */
+.who-we-are::before {
+  content: none;
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 23, 50, 0.65); /* dark navy with ~65% opacity */
+  z-index: 1;
+} 
+
+.section-text {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+  position: relative;
+  z-index: 1001;
+}
+
+.section-text h2 {
+  font-size: 53px;
+  font-family: "avenir-next-lt-pro", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  color: #2673af;
+  margin-bottom: 1.5rem;
+}
+
+.section-text p {
+  font-size: 22px;
+  font-family: "avenir-next-lt-pro", sans-serif;
+  font-weight: 200;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+/* OUR SERVICES PAGE STYLES */
+body.our-services-page {
+/* background-color: rgb(26, 42, 60); */
+  background-color: rgb(15, 36, 58); /* matches the dark background */
+  color: white;
+}
+
+.our-services {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.our-services h2 {
+  font-size: 53px;
+  font-family: "avenir-next-lt-pro", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  color: #2673af;
+  margin-bottom: 1.5rem;
+}
+
+.services-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.service-block {
+  max-width: 300px;
+  text-align: center;
+}
+
+.service-block img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.service-block p {
+  font-size: 20px;
+  font-family: "avenir-next-lt-pro", sans-serif;
+  font-weight: 200;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.service-block h3 {
+  font-family: "avenir-next-lt-pro", sans-serif;
+  font-size: 1.60rem;
+  font-style: normal;
+  font-weight: 200;
+  color: #2673af; /* Matches Canva */
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Why Choose Us Section */
+/* === WHY CHOOSE CONVERGE STYLES === */
+.why-choose {
+  padding: 80px 40px;
+  background-color: rgb(15, 36, 58); /* matches the dark background */
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 100;
+}
+
+.why-choose h2 {
+  font-size: 53px;
+  font-family: "avenir-next-lt-pro", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  color: #2673af;
+  margin-bottom: 2rem;
+}
+
+.choose-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.choose-block {
+  background-color: transparent;
+  border: 1px solid rgba(72, 173, 255, 0.4);
+  border-radius: 50px; /* ← This controls the roundness */
+  padding: 40px 30px;
+  width: 300px;
+  max-width: 90vw;
+  text-align: center;
+}
+
+.choose-block img {
+  width: 94px;
+  height: auto;
+  margin-bottom: 25px;
+}
+
+.choose-block h3 {
+  font-size: 26px;
+  font-family: "avenir-next-lt-pro", sans-serif;
+  font-weight: 200;
+  line-height: 1.2;
+  color: #2673af;
+}
+
+.choose-block p {
+  font-size: 20px;
+  font-family: "avenir-next-lt-pro", sans-serif;
+  font-weight: 200;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+/* Contact US Section */
+/* === CONTACT PAGE STYLING === */
+.contact-us-page {
+  background-color: #0f243a;
+  color: white;
+  font-family: "helvetica-neue-lt-pro", sans-serif;
+}
+
+.contact-layout {
+ display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 100px 60px;
+  gap: 60px;
+}
+
+.contact-left {
+  flex: 1 1 50%;
+  max-width: 600px;
+}
+
+.contact-left h1 {
+  font-size: 53px;
+  font-family: "avenir-next-lt-pro", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  color: #2673af;
+  margin-bottom: 2rem;
+}
+
+.contact-section {
+  margin-bottom: 40px;
+}
+
+.contact-section h3 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 26px;
+  font-family: "avenir-next-lt-pro", sans-serif;
+  font-weight: 200;
+  line-height: 1.2;
+  color: #2673af;
+}
+
+.contact-section p {
+  font-size: 20px;
+  font-family: "avenir-next-lt-pro", sans-serif;
+  font-weight: 200;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.contact-section a {
+  color: white;
+  text-decoration: underline;
+}
+
+.contact-right {
+  flex: 1 1 40%;
+  text-align: right;
+}
+
+.contact-right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+
+/* Base styles for mobile menu */
+.mobile-menu {
+  position: fixed;               /* Use fixed to keep menu aligned to viewport */
+  top: 0;
+  right: -100%;
+  background-color: #0f243a;
+  width: 230px;
+  height: 100vh;                 /* Full height for vertical menu */
+  transform: translateX(0%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 999;
+  display: none;
+  flex-direction: column;
+  padding: 1rem 0.5rem; /* top/bottom, left/right — tighter horizontal space */
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.5);  /* optional shadow for depth */
+}
+
+/* When menu is open */
+.mobile-menu.open {
+  display: flex;
+  right: 0;
+  transform: translateX(0%);
+}
+
+.desktop-menu {
+  display: flex;
+  margin-left: auto;     /* Pushes menu to the right inside flex container */
+  padding-right: 20px;   /* Adds a 20px buffer from right edge of nav-container */
+}
+
+.desktop-menu ul {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* dimming effect */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 999; /* behind mobile-menu, above page */
+}
+
+
+.overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* === RESPONSIVE STYLES === */
+/* === Base nav hidden and transition === */
+
+/*
+@media (max-width: 1024px) {
+.navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+.navbar nav ul {
+flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin-top: 1rem;
+flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+gap: 0.5rem;
+}
+
+.navbar nav ul li {
+margin-bottom: 0.5rem;
+margin: 0;
+}
+
+.logo {
+margin-bottom: 1rem;
+}
+
+.section-text,
+  .choose-grid,
+  .service-grid,
+  .contact-grid {
+padding: 1rem;
+}
+
+.service-block,
+  .choose-block {
+width: 100%;
+    margin-bottom: 2rem;
+}
+*/
+
+/* === BURGER MENU FOR TABLET & SMALL SCREENS === */
+  /*.burger {
+    display: block;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    z-index: 1001;
+  }
+
+/*}
+*/
+
+@media (max-width: 767px) {
+  .navbar {
+    padding: 0.3rem 1rem; /* Reduce vertical spacing */
+  }
+
+  .hero {
+    padding: 0 1rem 3rem 1rem; /* balanced padding left/right */
+    text-align: left;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  .hero-text p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    max-width: 100%;
+  }
+
+  h2 {
+      font-size: 1.6rem;
+  }
+
+  p {
+  font-size: 1rem;
+      line-height: 1.5;
+  }
+
+  .logo img {
+    width: 36px;
+  }
+
+  .logo span {
+    font-size: 1.2rem;
+    line-height: 1.1;
+  }
+
+
+  .choose-grid,
+    .service-grid,
+    .contact-grid {
+    display: block;
+  }
+
+  .contact-form input,
+    .contact-form textarea {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .contact-form {
+    gap: 1rem;
+  }
+
+  .burger {
+     display: block;
+     position: absolute;
+     top: 50%;
+     right: 2rem;   /* ← adjust spacing to match header padding */
+     transform: translateY(-50%);
+     z-index: 1001;
+  }
+  .burger.hide {
+    display: none !important;
+  }
+
+ 
+  nav.desktop-menu {
+    display: none !important;
+  }
+
+  nav.mobile-menu {
+    display: flex;
+  }
+
+  nav.mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.3rem;       /* ← tighten from 1.5rem */
+    padding: 0;
+    margin: 0;
+    }
+
+  nav.mobile-menu ul li {
+    width: 75%;
+  }
+
+  nav.mobile-menu ul li a {
+     display: block;
+     width: 100%;
+     padding: 0.25rem 0;  /* ← reduce padding */
+     font-size: 1rem;      /* ← slightly smaller font */
+  }
+
+.desktop-menu {
+  display: none !important;
+}
+
+.mobile-menu {
+  display: flex;
+}
+
+}
+
+/*
+@media (max-width: 400px) {
+.cta {
+    font-size: 0.9rem;
+    padding: 10px 16px;
+}
+
+h1, h2 {
+font-size: 1.3rem;
+}
+
+.navbar nav ul li a {
+font-size: 0.9rem;
+}
+
+*/
+
+@media (min-width: 768px) {
+  .mobile-menu {
+    display: none !important;
+  }
+
+  .burger {
+    display: none !important;
+  }
+}
+
