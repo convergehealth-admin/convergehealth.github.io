@@ -229,7 +229,7 @@ body.no-scroll {
   position: absolute;
   inset: 0;
   background-color: rgba(0, 23, 50, 0.65); /* dark navy with ~65% opacity */
-  z-index: 0;
+  z-index: 1;
 }
 
 .section-text {
@@ -237,12 +237,12 @@ body.no-scroll {
   margin: 0 auto;
   padding: 2rem 1rem;
   text-align: center;
-  z-index: 1; 
+  z-index: 2; 
   position: relative;
 }
 
 .section-text h2 {
-font-size: 53px;
+  font-size: 53px;
   font-family: "avenir-next-lt-pro", sans-serif;
   font-style: normal;
   font-weight: 200;
@@ -251,7 +251,7 @@ font-size: 53px;
 }
 
 .section-text p {
-font-size: 22px;
+  font-size: 22px;
   font-family: "avenir-next-lt-pro", sans-serif;
   font-weight: 200;
   line-height: 1.5;
