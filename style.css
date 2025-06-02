@@ -58,6 +58,7 @@ display: flex;
   align-items: center;
   padding: 0.4rem 2rem;
   font-family: "helvetica-neue-lt-pro", sans-serif;
+  z-index: 1000;
 }
 
 .nav-container {
@@ -699,6 +700,10 @@ font-size: 0.9rem;
 */
 
 @media (min-width: 768px) {
+  .desktop-menu {
+    display: flex !important;
+  }
+  
   .mobile-menu {
     display: none !important;
   }
