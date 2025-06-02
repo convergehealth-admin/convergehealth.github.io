@@ -38,13 +38,14 @@ display: flex;
   top: 0;
   left: 0;
   width: 100%;                   /* Full width */
-  z-index: 1000;                 /* On top of other content */
   background-color: #0f243a;     /* Match your current style */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.4rem 1.5rem;
   font-family: "helvetica-neue-lt-pro", sans-serif;
+  z-index: 1000;                 /* On top of other content */
+
 }
 
 .burger {
@@ -155,6 +156,7 @@ body.no-scroll {
   justify-content: center; /* center vertically */
   text-align: left;
   padding: 0 0 500px 75px; /* top, right, bottom, left: minimal left padding */
+  z-index: 100;
 }
 
 .hero-text h1 {
@@ -237,7 +239,7 @@ body.no-scroll {
   margin: 0 auto;
   padding: 2rem 1rem;
   text-align: center;
-  z-index: 2; 
+  z-index: 100; 
   position: relative;
 }
 
@@ -491,7 +493,7 @@ body.our-services-page {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease;
-  z-index: 998; /* behind mobile-menu, above page */
+  z-index: 10; /* behind mobile-menu, above page */
 }
 
 
