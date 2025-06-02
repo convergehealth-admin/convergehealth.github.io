@@ -480,7 +480,7 @@ body.our-services-page {
   margin: 0;
 }
 
-
+/*
 .overlay {
   position: fixed;
   top: 0;
@@ -488,17 +488,18 @@ body.our-services-page {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4); /* dimming effect */
-  opacity: 0;
+  /*opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease;
   z-index: 998; /* behind mobile-menu, above page */
 }
 
+/*
 .overlay.show {
   opacity: 1;
   visibility: visible;
 }
-
+*/
 
 /* === RESPONSIVE STYLES === */
 /* === Base nav hidden and transition === */
