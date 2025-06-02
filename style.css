@@ -471,6 +471,8 @@ body.our-services-page {
 
 .desktop-menu {
   display: flex;
+  margin-left: auto;     /* Pushes menu to the right inside flex container */
+  padding-right: 20px;   /* Adds a 20px buffer from right edge of nav-container */
 }
 
 .desktop-menu ul {
