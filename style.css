@@ -240,7 +240,6 @@ nav ul li a.active {
   inset: 0;
   background-color: rgba(0, 23, 50, 0.40); /* dark navy with ~65% opacity */
   z-index: 1; /*bheind content, above background */
-  display: none; /*temp*/
 } 
 
 
