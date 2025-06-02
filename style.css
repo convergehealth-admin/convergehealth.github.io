@@ -24,16 +24,6 @@ display: flex;
 
 /* === NAVBAR STYLES === */
 .navbar {
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #0f243a;
-  padding: 0.4rem 2rem; /* top/bottom, left/right reducing vertical padding*/
-  /*font-family: "helvetica-neue-lt-pro", sans-serif;
-  position: relative;
-  top: 0;
-  z-index: 999;
-*/
   position: fixed;               /* Keep it fixed on scroll */
   top: 0;
   left: 0;
@@ -222,7 +212,6 @@ body.no-scroll {
   flex-direction: column;
   overflow: hidden; /* prevent overflow */
   background-color: rgb(15, 36, 58); /* matches the dark background */
-  z-index: 0;
 }
 
 /* Adding overlay */
@@ -239,8 +228,8 @@ body.no-scroll {
   margin: 0 auto;
   padding: 2rem 1rem;
   text-align: center;
-  z-index: 100; 
   position: relative;
+  
 }
 
 .section-text h2 {
