@@ -38,6 +38,16 @@ display: flex;
 
 }
 
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
 .burger {
   display: none;
   font-size: 1.8rem;
