@@ -6,7 +6,6 @@ html, body {
   background-color: #001933;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  transform: none;
 }
 
 h1, h2, h3, p, a, span {
@@ -104,7 +103,6 @@ display: flex;
     transition: right 0.3s ease-in-out;
     z-index: 10; /* 🧼 Reduced from 999 to limit stacking context scope */
     will-change: right; /* ✅ Safe GPU hint */
-    transform: none; /* ✅ Prevents accidental GPU promotion */
     -webkit-font-smoothing: antialiased;
   }
   
@@ -163,7 +161,6 @@ nav ul li a.active {
   justify-content: center; /* center vertically */
   text-align: left;
   padding: 0 0 500px 75px; /* top, right, bottom, left: minimal left padding */
-  z-index: 100;
 }
 
 .hero-text h1 {
@@ -249,14 +246,10 @@ nav ul li a.active {
   padding: 2rem 1rem;
   text-align: center;
   position: relative;
-  transform: translateZ(0);
-  will-change: auto;
   z-index: 2;
   -webkit-font-smoothing: antialiased; /* Improve text rendering */
   -moz-osx-font-smoothing: auto; /* Default Mozilla smoothing */
   text-rendering: optimizeSpeed; /* Prioritize clarity */
-  backface-visibility: hidden; /* Prevent rendering artifacts */
-  transform: translateZ(0); /* Force hardware acceleration */
 }
 
 .section-text h2 {
@@ -287,7 +280,6 @@ body.our-services-page {
   padding: 4rem 2rem;
   text-align: center;
   position: relative;
-  z-index: 100;
 }
 
 .our-services h2 {
@@ -344,7 +336,6 @@ body.our-services-page {
   text-align: center;
   color: white;
   position: relative;
-  z-index: 100;
 }
 
 .why-choose h2 {
