@@ -287,6 +287,17 @@ body.our-services-page {
   margin-bottom: 1.5rem;
 }
 
+.service-block h3 {
+  font-family: "avenir-next-lt-pro", sans-serif;
+  font-size: 26px;
+  font-weight: 200;
+  color: #2673af; /* Matches Canva */
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+  line-height: 1.2;
+}
+
 .services-grid {
   display: flex;
   justify-content: center;
@@ -313,16 +324,7 @@ body.our-services-page {
   color: #ffffff;
 }
 
-.service-block h3 {
-  font-family: "avenir-next-lt-pro", sans-serif;
-  font-size: 26px;
-  font-weight: 200;
-  color: #2673af; /* Matches Canva */
-  margin-top: 20px;
-  margin-bottom: 15px;
-  text-align: center;
-  line-height: 1.2;
-}
+
 
 /* Why Choose Us Section */
 /* === WHY CHOOSE CONVERGE STYLES === */
