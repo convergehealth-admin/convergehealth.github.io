@@ -286,8 +286,9 @@ body.our-services-page {
 
 .service-block h3 {
   font-family: "avenir-next-lt-pro", sans-serif;
-  font-size: 26px;
+  font-style: normal;
   font-weight: 200;
+  font-size: 26px;
   color: #2673af; /* Matches Canva */
   margin-top: 20px;
   margin-bottom: 15px;
@@ -353,7 +354,7 @@ body.our-services-page {
   background-color: transparent;
   border: 1px solid rgba(72, 173, 255, 0.4);
   border-radius: 50px; /* ← This controls the roundness */
-  padding: 40px 30px;
+  padding: 35px 30px; /* top and bottom | left and right */
   width: 300px;
   max-width: 90vw;
   text-align: center;
@@ -368,6 +369,7 @@ body.our-services-page {
 .choose-block h3 {
   font-size: 26px;
   font-family: "avenir-next-lt-pro", sans-serif;
+  font-style: normal;
   font-weight: 200;
   line-height: 1.2;
   color: #2673af;
@@ -376,6 +378,7 @@ body.our-services-page {
 .choose-block p {
   font-size: 20px;
   font-family: "avenir-next-lt-pro", sans-serif;
+  font-style: normal;
   font-weight: 200;
   line-height: 1.2;
   color: #ffffff;
@@ -390,7 +393,7 @@ body.our-services-page {
 }
 
 .contact-layout {
- display: flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
@@ -421,6 +424,7 @@ body.our-services-page {
   letter-spacing: 1px;
   font-size: 26px;
   font-family: "avenir-next-lt-pro", sans-serif;
+  font-style: normal;
   font-weight: 200;
   line-height: 1.2;
   color: #2673af;
@@ -429,6 +433,7 @@ body.our-services-page {
 .contact-section p {
   font-size: 20px;
   font-family: "avenir-next-lt-pro", sans-serif;
+  font-style: normal;
   font-weight: 200;
   line-height: 1.6;
   color: #ffffff;
