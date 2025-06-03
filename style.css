@@ -285,10 +285,12 @@ body.our-services-page {
 }
 
 .service-block h3 {
-  font-family: "avenir-next-lt-pro", sans-serif;
+  /* font-family: "avenir-next-lt-pro", sans-serif;
+  */
+  font-family: "helvetica-neue-lt-pro", sans-serif;
   font-style: normal;
   font-weight: 200;
-  font-size: 28px;
+  font-size: 26px;
   color: #2673af; /* Matches Canva */
   margin-top: 20px;
   margin-bottom: 15px;
