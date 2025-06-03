@@ -220,7 +220,6 @@ nav ul li a.active {
   padding: 0 2rem;
   flex-direction: column;
   overflow: hidden; /* prevent overflow */
-  /*background-color: rgb(15, 36, 58); /* matches the dark background */
 }
 
 /* Adding overlay */
@@ -230,7 +229,8 @@ nav ul li a.active {
   inset: 0;
   background-color: rgba(0, 23, 50, 0.65);
   opacity: 1;
-  z-index: 0;                  /* ✅ behind everything */
+  /*z-index: 0;                  /* ✅ behind everything */
+*/
 } 
 
 
