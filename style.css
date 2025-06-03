@@ -315,13 +315,13 @@ body.our-services-page {
 
 .service-block h3 {
   font-family: "avenir-next-lt-pro", sans-serif;
-  font-size: 1.60rem;
-  font-style: normal;
+  font-size: 26px;
   font-weight: 300;
   color: #2673af; /* Matches Canva */
   margin-top: 20px;
   margin-bottom: 15px;
   text-align: center;
+  line-height: 1.2;
 }
 
 /* Why Choose Us Section */
