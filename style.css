@@ -4,11 +4,11 @@ html, body {
   padding: 0;
   height: 100%;
   scroll-behavior: smooth;
-/*  background-color: #001933;
+  background-color: #001933;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-*/
+
 }
 
 
