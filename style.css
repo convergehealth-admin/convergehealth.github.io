@@ -86,8 +86,8 @@ display: flex;
    nav.mobile-menu {
     position: fixed;
     top: 0;
-    right: -50%;
-    width: 70vw;
+    right: -100%;
+    width: 50vw;
     max-width: 280px;
     height: 100vh;
     background-color: #0f243a;
@@ -462,28 +462,11 @@ body.our-services-page {
 }
 
 
-/* Base styles for mobile menu *//*
-.mobile-menu {
-  position: fixed;               /* Use fixed to keep menu aligned to viewport */
-  /*top: 0;
-  right: -100%;
-  background-color: #0f243a;
-  width: 230px;
-  height: 100vh;                 /* Full height for vertical menu */
-  /*transform: translateX(0%);
-  transition: transform 0.3s ease-in-out;
-  z-index: 999;
-  display: none;
-  flex-direction: column;
-  padding: 1rem 0.5rem; /* top/bottom, left/right — tighter horizontal space */
-  /*&box-shadow: -2px 0 8px rgba(0, 0, 0, 0.5);  /* optional shadow for depth */
-/*}
-*/
 /* When menu is open */
 .mobile-menu.open {
   display: flex;
   right: 0;
-  transform: translateX(0%);
+ /* transform: translateX(0%); */
 }
 
 .desktop-menu {
