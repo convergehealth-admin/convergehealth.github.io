@@ -159,7 +159,7 @@ nav ul li a.active {
 }
 
 .hero-text h1 {
-  font-family: "helvetica-lt-pro", sans-serif;
+  font-family: "aktiv-grotesk", sans-serif;
   font-size: 4rem;
   font-weight: 400;
   line-height: 1.1;
@@ -167,7 +167,7 @@ nav ul li a.active {
 }
 
 .hero-text p {
-  font-family: "helvetica-lt-pro", sans-serif;
+  font-family: "aktiv-grotesk", sans-serif;
   font-size: 1.5rem;
   line-height: 1.2;
   font-weight: 200;
@@ -252,7 +252,7 @@ nav ul li a.active {
   font-size: 53px;
   font-family: "avenir-next-lt-pro", sans-serif;
   font-style: normal;
-  font-weight: 200;
+  font-weight: 500;
   color: #2673af;
   margin-bottom: 1.5rem;
 }
@@ -261,8 +261,7 @@ nav ul li a.active {
   font-size: 22px;
   /* font-family: "avenir-next-lt-pro", sans-serif;
   */
-  /*font-family: "aktiv-grotesk", sans-serif; */
-  font-family: "aileron", sans-serif;
+  font-family: "aktiv-grotesk", sans-serif;
   font-weight: 200;
   line-height: 1.5;
   color: #ffffff;
@@ -292,7 +291,7 @@ body.our-services-page {
 .service-block h3 {
   /* font-family: "avenir-next-lt-pro", sans-serif;
   */
-  font-family: "helvetica-neue-lt-pro", sans-serif;
+  font-family: "aktiv-grotesk", sans-serif;
   font-style: normal;
   font-weight: 200;
   font-size: 26px;
@@ -375,7 +374,7 @@ body.our-services-page {
 
 .choose-block h3 {
   font-size: 26px;
-  font-family: "avenir-next-lt-pro", sans-serif;
+  font-family: "aktiv-grotesk", sans-serif;
   font-style: normal;
   font-weight: 200;
   line-height: 1.2;
@@ -430,7 +429,7 @@ body.our-services-page {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 26px;
-  font-family: "avenir-next-lt-pro", sans-serif;
+  font-family: "aktiv-grotesk", sans-serif;
   font-style: normal;
   font-weight: 200;
   line-height: 1.2;
@@ -439,7 +438,7 @@ body.our-services-page {
 
 .contact-section p {
   font-size: 20px;
-  font-family: "avenir-next-lt-pro", sans-serif;
+  font-family: "aktiv-grotesk", sans-serif;
   font-style: normal;
   font-weight: 200;
   line-height: 1.6;
