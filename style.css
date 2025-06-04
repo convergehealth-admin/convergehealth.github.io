@@ -502,6 +502,15 @@ body.our-services-page {
   visibility: visible;
 }
 
+body {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+body.fade-in {
+  opacity: 1;
+}
+
 
 /* === RESPONSIVE STYLES === */
 /* === Base nav hidden and transition === */
