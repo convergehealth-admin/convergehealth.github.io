@@ -322,8 +322,8 @@ body.our-services-page {
 
 .service-block p {
   font-size: 20px;
-  font-family: "avenir-next-lt-pro", sans-serif;
-  font-weight: 300;
+  font-family: "aktiv-grotesk", sans-serif;
+  font-weight: 200;
   line-height: 1.2;
   color: #ffffff;
 }
@@ -357,7 +357,7 @@ body.our-services-page {
 }
 
 .choose-block {
-  background-color: transparent;
+  /*background-color: transparent; */
   border: 1px solid rgba(72, 173, 255, 0.4);
   border-radius: 50px; /* ← This controls the roundness */
   padding: 35px 30px; /* top and bottom | left and right */
@@ -383,7 +383,7 @@ body.our-services-page {
 
 .choose-block p {
   font-size: 20px;
-  font-family: "avenir-next-lt-pro", sans-serif;
+  font-family: "aktiv-grotesk", sans-serif;
   font-style: normal;
   font-weight: 200;
   line-height: 1.2;
@@ -605,6 +605,10 @@ width: 100%;
     line-height: 1.1;
   }
 
+  .why-choose {
+  padding: 40px 5px;
+  }
+
   .choose-grid {
     display: flex;
     flex-direction: column;
@@ -617,7 +621,20 @@ width: 100%;
     width: 100%;
     max-width: 320px;
     margin: 0 auto;       /* ✅ Ensure horizontal centering fallback */
+    
+    padding: 10px 16px;    /* ⬅ tighten padding for mobile */
+    border-radius: 30px;   /* ⬅ slightly less round on mobile */
   }
+
+
+
+  font-size: 20px;
+  font-family: "aktiv-grotesk", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 1.6;
+  color: #ffffff;
+
 
   .contact-form input,
     .contact-form textarea {
