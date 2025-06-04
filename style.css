@@ -87,8 +87,8 @@ display: flex;
     position: fixed;
     top: 0;
     right: -100%;
-    width: 80%;
-    max-width: 300px;
+    width: 70vw;
+    max-width: 280px;
     height: 100vh;
     background-color: #0f243a;
     display: flex;
@@ -252,7 +252,7 @@ nav ul li a.active {
   font-size: 53px;
   font-family: "avenir-next-lt-pro", sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 300;
   color: #2673af;
   margin-bottom: 1.5rem;
 }
