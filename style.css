@@ -86,7 +86,7 @@ display: flex;
    nav.mobile-menu {
     position: fixed;
     top: 0;
-    right: -100%;
+    right: -50%;
     width: 70vw;
     max-width: 280px;
     height: 100vh;
