@@ -648,7 +648,7 @@ width: 100%;
 
   nav.mobile-menu {
     display: flex;
-    padding: 3rem 25px;  /* ⬅ this sets left and right padding to exactly 25px */
+    padding: 3rem 5px;  /* ⬅ this sets left and right padding to exactly 25px */
 
   }
 
