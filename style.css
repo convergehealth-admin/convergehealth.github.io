@@ -259,7 +259,9 @@ nav ul li a.active {
 
 .section-text p {
   font-size: 22px;
-  font-family: "avenir-next-lt-pro", sans-serif;
+  /* font-family: "avenir-next-lt-pro", sans-serif;
+  */
+  font-family: "aktiv-grotesk", sans-serif;
   font-weight: 200;
   line-height: 1.5;
   color: #ffffff;
