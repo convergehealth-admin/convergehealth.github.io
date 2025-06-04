@@ -87,15 +87,15 @@ display: flex;
     position: fixed;
     top: 0;
     right: -100%;
-    width: 65vw;
-    max-width: 240px;
+    width: 50vw;
+    max-width: 230px;
     height: 100vh;
     background-color: #0f243a;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 3rem 1rem;
+    padding: 2rem 1rem;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
     transition: right 0.3s ease-in-out;
     z-index: 10; /* 🧼 Reduced from 999 to limit stacking context scope */
