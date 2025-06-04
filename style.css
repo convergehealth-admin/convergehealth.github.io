@@ -466,7 +466,6 @@ body.our-services-page {
 .mobile-menu.open {
   display: flex;
   right: 0;
- /* transform: translateX(0%); */
 }
 
 .desktop-menu {
@@ -649,6 +648,8 @@ width: 100%;
 
   nav.mobile-menu {
     display: flex;
+    padding: 3rem 25px;  /* ⬅ this sets left and right padding to exactly 25px */
+
   }
 
   nav.mobile-menu ul {
