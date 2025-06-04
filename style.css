@@ -53,7 +53,7 @@ display: flex;
   align-items: center;
   padding: 0.4rem 2rem;
   font-family: "helvetica-neue-lt-pro", sans-serif;
-  z-index: 1000;
+  z-index: 10;
 }
 
 .nav-container {
@@ -240,6 +240,8 @@ nav ul li a.active {
   padding: 2rem 1rem;
   text-align: center;
   position: relative;
+  isolation: isolate;
+  mix-blend-mode: normal;
   z-index: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -506,7 +508,7 @@ body.our-services-page {
   /*opacity: 0; */
   visibility: hidden;
   transition: opacity 0.3s ease;
-  z-index: 999; /* behind mobile-menu, above page */
+  z-index: 9; /* behind mobile-menu, above page */
 }
 
 
