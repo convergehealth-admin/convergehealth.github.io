@@ -832,3 +832,26 @@ font-size: 0.9rem;
     height: 120px;
   }
 }
+
+/* Surgical Fix: Removed background, border, and box-shadow */
+.article-cta {
+    margin-top: 4rem;
+    text-align: center;
+    border: none;
+    background: transparent;
+}
+
+.article-cta h2 {
+    font-family: "avenir-next-lt-pro", sans-serif;
+    color: #2673af;
+    margin-bottom: 1rem;
+}
+
+.article-cta p {
+    font-family: "aktiv-grotesk", sans-serif;
+    font-weight: 200;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    line-height: 1.5;
+    color: white;
+}
