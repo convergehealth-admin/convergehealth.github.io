@@ -775,3 +775,60 @@ font-size: 0.9rem;
   margin-top: 2rem;
   font-weight: 400;
 }
+
+/* Restored Bio Box with Professional Border */
+.author-bio-container {
+  margin-top: 5rem;
+  padding: 2.5rem;
+  background: rgba(15, 36, 58, 0.9); /* Deep professional blue */
+  border: 1px solid rgba(72, 173, 255, 0.4); /* Brand highlight border */
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.author-bio-content {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.bio-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #2673af; /* Matches your navbar brand blue */
+}
+
+.bio-text h3 {
+  color: #2673af;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.8rem;
+  font-family: "avenir-next-lt-pro", sans-serif;
+  font-weight: 300;
+}
+
+.bio-text p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  font-weight: 200;
+  color: #ffffff;
+}
+
+.bio-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* Mobile responsive centering */
+@media (max-width: 767px) {
+  .author-bio-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .bio-photo {
+    width: 120px;
+    height: 120px;
+  }
+}

@@ -1,3 +1,8 @@
+I understand the frustration. I have meticulously reviewed the entire code block to ensure every instance of bracketed text like `` is removed. This version uses clean, professional HTML and CSS that aligns with your existing site's design while protecting your professional narrative.
+
+### Final Article HTML: `insights/pe-healthcare-tech-value.html`
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +19,11 @@
       "@type": "Person", 
       "name": "Rod Jardine",
       "url": "https://www.convergehealth.net/who-we-are.html"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Converge Health",
+      "logo": "https://www.convergehealth.net/assets/logo.png"
     }
   }
   </script>
@@ -23,16 +33,81 @@
   <link rel="stylesheet" href="https://use.typekit.net/jfe1dva.css">
 
   <style>
-    /* Professional Executive Layout */
-    .article-container { max-width: 850px; margin: 120px auto; padding: 0 2rem; color: white; font-family: "aktiv-grotesk", sans-serif; }
-    h1, h2, h3 { font-family: "avenir-next-lt-pro", sans-serif; color: #2673af; font-weight: 300; }
+    /* Professional Executive Layout Styling */
+    .article-container { 
+        max-width: 850px; 
+        margin: 120px auto 60px; 
+        padding: 0 2rem; 
+        color: white; 
+        font-family: "aktiv-grotesk", sans-serif; 
+    }
+    
+    h1, h2, h3 { 
+        font-family: "avenir-next-lt-pro", sans-serif; 
+        color: #2673af; 
+        font-weight: 300; 
+    }
+    
     h1 { font-size: 3.2rem; line-height: 1.1; margin-bottom: 2rem; }
     h2 { font-size: 2.2rem; margin-top: 3.5rem; border-bottom: 1px solid rgba(38, 115, 175, 0.3); padding-bottom: 10px; }
     h3 { font-size: 1.6rem; color: #49d3f7; margin-top: 2rem; }
+    
     p { font-size: 1.2rem; line-height: 1.6; font-weight: 200; margin-bottom: 1.5rem; }
-    .hero-banner { width: 100%; height: 350px; border-radius: 15px; object-fit: cover; margin-bottom: 3rem; }
-    .diagram-content { background: rgba(73, 211, 247, 0.05); border: 1px solid #49d3f7; padding: 2rem; border-radius: 10px; margin: 2rem 0; }
+    
+    .meta-info { 
+        font-weight: 200; 
+        color: rgba(255,255,255,0.6); 
+        margin-bottom: 3rem; 
+        border-bottom: 1px solid rgba(72, 173, 255, 0.2); 
+        padding-bottom: 1rem; 
+    }
+
     .metrics-link { color: #49d3f7; text-decoration: underline; font-weight: 400; }
+
+    .highlight-box {
+        border-left: 4px solid #49d3f7;
+        background: rgba(73, 211, 247, 0.05);
+        padding: 1.5rem 2rem;
+        margin: 2rem 0;
+        font-style: italic;
+    }
+
+    /* CTA Section */
+    .article-cta {
+        margin-top: 4rem;
+        padding: 3rem;
+        background: rgba(73, 211, 247, 0.05);
+        border: 1px solid #49d3f7;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    /* Author Bio Box with Border */
+    .author-bio-container {
+        margin-top: 5rem;
+        padding: 2.5rem;
+        background: rgba(15, 36, 58, 0.9);
+        border: 1px solid rgba(72, 173, 255, 0.4);
+        border-radius: 20px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .author-bio-content { display: flex; gap: 2rem; align-items: center; }
+    .bio-photo { 
+        width: 140px; 
+        height: 140px; 
+        border-radius: 50%; 
+        object-fit: cover; 
+        border: 2px solid #2673af; 
+    }
+    .bio-text h3 { margin-top: 0; margin-bottom: 0.5rem; }
+    .bio-text h3 a { color: #2673af; text-decoration: none; }
+    .bio-text p { margin-bottom: 0.8rem; font-size: 1.1rem; }
+
+    @media (max-width: 767px) {
+        h1 { font-size: 2.2rem; }
+        .author-bio-content { flex-direction: column; text-align: center; }
+    }
   </style>
 </head>
 
@@ -56,39 +131,45 @@
   </header>
 
   <main class="article-container">
-    
-    
     <header>
       <h1>The Strategic CIO’s Guide to Value Creation in PE-Backed Healthcare</h1>
       <p class="meta-info">Insights by <strong>Rod Jardine</strong> | Executive Strategy</p>
     </header>
 
     <section class="article-content">
-      <p>In high-stakes clinical operations, technology is the primary engine of valuation. Throughout my career leading global teams for <strong>Fortune 50 health services leaders</strong> and <strong>PE-backed firms</strong>, I have seen how technical integrity directly dictates exit success.</p>
-
-      <p>I have leveraged these principles to stabilize infrastructure for a 
-      <a href="../who-we-are.html" class="metrics-link">$3.3B strategic acquisition</a> 
-      and manage global engineering organizations with 
-      <a href="https://www.linkedin.com/in/rodjardine/" class="metrics-link">$100M+ budgets</a>.</p>
+      <p>In the current healthcare landscape, technology is no longer a support function; it is the primary engine of valuation. Drawing from three decades of experience leading technology for <strong>Fortune 50 health services leaders</strong> and <strong>PE-backed clinical operations</strong>, I have observed that the difference between a successful exit and a stagnant portfolio company often lies in the "invisible" layers of the tech stack.</p>
       
-      <h2>The Tech Due Diligence Checklist</h2>
-      <p>To de-risk an investment, you must move beyond the surface. A robust assessment focuses on documentation, security posture, and dev process maturity.</p>
-      
-      
+      <p>When preparing for a high-stakes transition—such as a 
+      <a href="../who-we-are.html" class="metrics-link"><strong>$3.3B strategic acquisition</strong></a> 
+      —or managing a global engineering organization with a 
+      <a href="https://www.linkedin.com/in/rodjardine/" class="metrics-link"><strong>$100M+ budget</strong></a>, executive leadership must look beyond the user interface.</p>
 
       <h2>The Five Strategic Failure Modes</h2>
-      
+
       <h3>1. The "Code Theater" Mirage</h3>
-      <p>Demos can mask significant technical debt. I often find platforms that lack the integrity to handle a <strong>10x scaling event</strong>. True value lies in systems that survive diligence without immediate, massive reinvestment.</p>
+      <p>Demos can be deceptive. A platform may appear modern, yet lack the architectural integrity to handle a <strong>10x scaling event</strong>. True value is found in high-availability systems that survive due diligence without massive immediate reinvestment.</p>
+
+      <div class="highlight-box">
+        "If the platform requires heroic efforts from developers just to stay online, it will never survive the rigors of a multi-product scaling strategy."
+      </div>
 
       <h3>2. The Scalability Wall</h3>
-      <p>Many platforms fail when pivoting to a <strong>multi-product strategy</strong>. Transitioning from a single clinical niche to a broad service provider requires shifting from monolithic to service-oriented architectures.</p>
+      <p>Many platforms excel in a single clinical niche but fail when a company pivots to a <strong>multi-product strategy</strong>. Building the virtual care infrastructure to support high-acuity populations requires a fundamental shift from monolithic to service-oriented architectures.</p>
 
-      <h3>3. Governance as a Foundation</h3>
-      <p>Frameworks like <strong>HIPAA, SOC 2, and HITRUST</strong> are not just burdens; they are "credibility armor". As a <strong>de facto Chief Security Officer</strong>, I've seen how governance protects the exit timeline.</p>
+      <h3>3. Governance as a Foundation, Not a Checkbox</h3>
+      <p>Compliance frameworks like <strong>HIPAA, SOC 2, and HITRUST</strong> are often treated as administrative burdens. Mature leadership views governance as "credibility armor" that protects the brand and the exit timeline.</p>
+
+      <h3>4. MSP Over-Dependence</h3>
+      <p>While Managed Service Providers offer short-term flexibility, heavy reliance creates roadmap stagnation. Transitioning IT operations to high-performing internal teams is often the most effective way to reduce Opex and regain strategic control.</p>
+
+      <h3>5. The "AI-Ready" Myth</h3>
+      <p>Everyone discusses AI, but few possess the clean data pipelines required for <strong>LLM-driven semantic platforms</strong>. True AI ROI, such as the <strong>$160M in annual savings</strong> achieved through risk-adjustment optimization, requires a disciplined approach to data governance.</p>
+
+      
 
       <section class="article-cta">
         <h2>De-Risk Your Next Stage</h2>
+        <p>Ensure your technology stack is a value driver, not a liability, before your next strategic milestone.</p>
         <div class="cta-wrapper">
           <a class="cta" href="mailto:info@convergehealth.net?subject=Strategic%20Assessment%20Inquiry&body=Hi%20Rod,%0A%0AI'd%20like%20to%20schedule%20a%20brief%20call%20regarding%20a%20strategic%20assessment.%0A%0ACompany:%20%0APhone:%20">
             🔍 Schedule a Strategic Assessment
@@ -97,13 +178,30 @@
       </section>
     </section>
 
-    <footer class="author-bio">
-      <img src="../assets/professional2.png" alt="Rod Jardine"> 
-      <div>
-        <h3>About Rod Jardine</h3>
-        <p>Rod Jardine is an accomplished senior executive with 30+ years of experience leading technology at <strong>Optum, Anthem, and SS&C</strong>. He specializes in scaling technology teams of <strong>575+ engineers</strong> and driving billion-dollar exit strategies.</p>
+    <footer class="author-bio-container">
+      <div class="author-bio-content">
+        <img src="../assets/professional2.png" alt="Rod Jardine" class="bio-photo"> 
+        <div class="bio-text">
+          <h3>About <a href="https://www.linkedin.com/in/rodjardine/" class="metrics-link">Rod Jardine</a></h3>
+          <p>Rod Jardine is an accomplished senior executive with over 30 years of experience leading technology and infrastructure for healthcare leaders including <strong>Optum/UHG, Anthem, and SS&C</strong>.</p>
+          <p>He specializes in scaling global technology teams of <strong>575+ engineers</strong> and driving high-stakes <strong>billion-dollar exit strategies</strong>, most recently facilitating a 
+          <a href="../who-we-are.html" class="metrics-link"><strong>$3.3B strategic acquisition</strong></a>.</p>
+        </div>
       </div>
     </footer>
   </main>
+
+  <script>
+      const burger = document.querySelector('.burger');
+      const mobileMenu = document.querySelector('.mobile-menu');
+      const body = document.body;
+
+      burger?.addEventListener('click', () => {
+        mobileMenu.classList.toggle('open');
+        body.classList.toggle('no-scroll');
+      });
+  </script>
 </body>
 </html>
+
+```
