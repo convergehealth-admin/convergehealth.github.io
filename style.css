@@ -725,3 +725,53 @@ font-size: 0.9rem;
   }
 }
 
+/* === ARTICLE & INSIGHTS STYLING === */
+.article-container {
+  max-width: 900px;
+  margin: 120px auto 60px; /* Adjusts for the fixed navbar */
+  padding: 0 2rem;
+  color: white;
+  font-family: "aktiv-grotesk", sans-serif;
+}
+
+.article-header h1 {
+  font-family: "avenir-next-lt-pro", sans-serif;
+  font-size: 3.5rem;
+  color: #2673af;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+.meta-info {
+  font-family: "aktiv-grotesk", sans-serif;
+  font-weight: 200;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 3rem;
+  border-bottom: 1px solid rgba(72, 173, 255, 0.2);
+  padding-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.article-content p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  font-weight: 200;
+  margin-bottom: 1.8rem;
+}
+
+.article-content h2 {
+  color: #2673af;
+  font-family: "avenir-next-lt-pro", sans-serif;
+  font-size: 2.2rem;
+  margin-top: 3.5rem;
+  font-weight: 300;
+}
+
+.article-content h3 {
+  color: #49d3f7; /* Brighter blue for sub-headers */
+  font-family: "aktiv-grotesk", sans-serif;
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  font-weight: 400;
+}
