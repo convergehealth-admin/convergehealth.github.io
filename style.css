@@ -172,10 +172,21 @@ h3 { font-size: 1.6rem; color: #49d3f7; margin-top: 2rem; margin-bottom: 1rem; }
 }
 
 .sprint-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start; /* Ensures groups start at the top */
+}
+
+.column-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem; /* Controls the space between the top and bottom boxes */
+}
+
+.sprint-column {
+    /* Remove any fixed heights if you have them */
+    height: auto;
 }
 
 .sprint-metrics { list-style: none; padding: 0; }
@@ -262,14 +273,6 @@ h3 { font-size: 1.6rem; color: #49d3f7; margin-top: 2rem; margin-bottom: 1rem; }
 }
 
 /* --- Founder-Friendly Strategy Block --- */
-.strategy-quote-container {
-    margin: 4rem 0;
-    padding: 3rem;
-    background-color: #0f243a; /* Deep blue from your sample */
-    border-left: 5px solid #49d3f7; /* High-contrast bright blue marker */
-    border-radius: 0 20px 20px 0;
-    font-family: "aktiv-grotesk", sans-serif;
-}
 
 .philosophy-statement {
     font-size: 1.8rem;
@@ -305,3 +308,291 @@ h3 { font-size: 1.6rem; color: #49d3f7; margin-top: 2rem; margin-bottom: 1rem; }
     .philosophy-statement { font-size: 1.4rem; }
     .strategy-quote-container { padding: 2rem 1.5rem; }
 }
+
+.sprint-row-pull {
+    margin-top: -50px; /* This pulls the individual boxes up */
+    z-index: 1; /* Ensures they stay on top of the grid flow */
+}
+
+/* Optional: If the pull creates overlap on mobile, reset it */
+@media (max-width: 767px) {
+    .sprint-row-pull {
+        margin-top: 0;
+    }
+}
+
+/* --- Glassmorphism Strategy Card --- */
+.strategy-glass-card {
+    margin: 6rem 0;
+    padding: 3.5rem;
+    background: rgba(255, 255, 255, 0.03); /* Subtle glass transparency */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 30px;
+    border: 1px solid rgba(73, 211, 247, 0.15); /* Soft border glow */
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+/* The Blue Accent Glow in the Top-Left Corner */
+.strategy-glass-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, rgba(73, 211, 247, 0.3) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.philosophy-statement {
+    font-size: 1.7rem;
+    line-height: 1.4;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    font-family: "avenir-next-lt-pro", sans-serif;
+    font-weight: 200;
+}
+
+.strategy-detail {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2.5rem;
+    font-weight: 200;
+}
+
+
+
+
+
+.jardine-logic-stack { margin: 100px 0; font-family: 'Inter', sans-serif; color: #fff; }
+.stack-intro { text-align: center; margin-bottom: 60px; }
+.eyebrow { color: #49d3f7; letter-spacing: 4px; font-weight: 800; font-size: 12px; text-transform: uppercase; }
+.stack-main-title { font-size: 48px; font-weight: 900; margin-top: 15px; }
+.stack-description { color: rgba(255,255,255,0.6); max-width: 700px; margin: 20px auto; font-size: 18px; }
+
+.logic-flow { border-top: 1px solid rgba(255,255,255,0.1); }
+.flow-step { 
+    display: grid; 
+    grid-template-columns: 200px 1fr; 
+    padding: 60px 0; 
+    border-bottom: 1px solid rgba(255,255,255,0.1); 
+    transition: all 0.4s ease;
+}
+.flow-step:hover { background: rgba(73, 211, 247, 0.03); padding-left: 20px; }
+.highlight-step { background: rgba(73, 211, 247, 0.02); border-left: 5px solid #49d3f7; }
+
+.step-meta { display: flex; flex-direction: column; gap: 10px; }
+.step-num { font-size: 16px; font-weight: 900; color: #49d3f7; opacity: 0.5; }
+.step-label { font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; color: #49d3f7; }
+
+.step-body h3 { font-size: 28px; font-weight: 700; margin-bottom: 15px; }
+.step-body p { font-size: 17px; line-height: 1.7; color: rgba(255,255,255,0.8); max-width: 850px; }
+
+@media (max-width: 800px) {
+    .flow-step { grid-template-columns: 1fr; gap: 20px; }
+}
+
+/* Removes initial focus; only highlights on interaction */
+.flow-step {
+    border-left: 5px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.flow-step:hover, .flow-step:active {
+    background: rgba(73, 211, 247, 0.05);
+    border-left: 5px solid #49d3f7;
+    padding-left: 20px; /* Adds a subtle 'shift' effect on hover */
+}
+
+.semantic-link {
+    color: #49d3f7;
+    text-decoration: none;
+    border-bottom: 1px dashed rgba(73, 211, 247, 0.5);
+    transition: border-bottom 0.2s;
+}
+
+.semantic-link:hover {
+    border-bottom: 1px solid #49d3f7;
+}
+
+.jardine-bento-section { margin: 100px 0; color: #fff; }
+.bento-intro { text-align: center; margin-bottom: 50px; }
+.bento-main-title { font-size: 42px; font-weight: 800; margin-top: 10px; color: #fff; }
+.bento-description { color: rgba(255,255,255,0.6); max-width: 650px; margin: 0 auto; font-size: 1.1rem; }
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+
+.bento-card {
+    background: rgba(15, 36, 58, 0.4);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(73, 211, 247, 0.1);
+    border-radius: 24px;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.large-card { grid-row: span 2; display: flex; flex-direction: column; justify-content: center; }
+
+.bento-card:hover {
+    border-color: rgba(73, 211, 247, 0.4);
+    transform: translateY(-5px);
+    background: rgba(15, 36, 58, 0.6);
+}
+
+/* The "Scanner" Animation Effect */
+.bento-card::after {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgba(73, 211, 247, 0.05), transparent);
+    transition: 0.8s;
+}
+.bento-card:hover::after { top: 100%; }
+
+.card-num { color: #49d3f7; font-weight: 900; opacity: 0.4; font-size: 0.9rem; }
+.pillar-label { float: right; font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #49d3f7; font-weight: 700; }
+.bento-card h3 { font-size: 26px; margin: 20px 0 15px; color: #fff; }
+.bento-card p { font-size: 1rem; color: rgba(255,255,255,0.7); line-height: 1.6; }
+
+.status-indicator {
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #49d3f7;
+    border: 1px solid rgba(73, 211, 247, 0.3);
+    padding: 4px 12px;
+    border-radius: 100px;
+}
+
+@media (max-width: 900px) { .bento-grid { grid-template-columns: 1fr; } }
+
+.readiness-matrix-terminal {
+    margin: 80px 0;
+    padding: 3rem;
+    background: rgba(15, 36, 58, 0.4);
+    border: 1px solid rgba(73, 211, 247, 0.15);
+    border-radius: 24px;
+    backdrop-filter: blur(12px);
+}
+
+.terminal-header { margin-bottom: 2.5rem; }
+.terminal-header h2 { font-size: 2.2rem; color: #fff; border-bottom: none; margin-bottom: 0.5rem; }
+.terminal-subtitle { color: rgba(255, 255, 255, 0.6); font-size: 1.1rem; font-weight: 200; }
+
+.terminal-table { width: 100%; border-collapse: collapse; text-align: left; }
+.terminal-table th {
+    padding: 15px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #49d3f7;
+    border-bottom: 2px solid rgba(73, 211, 247, 0.3);
+}
+
+.terminal-table td { padding: 25px 15px; border-bottom: 1px solid rgba(255, 255, 255, 0.05); vertical-align: middle; }
+
+.pillar-cell { font-family: "avenir-next-lt-pro", sans-serif; font-size: 1.1rem; color: #fff; width: 20%; }
+.impl-cell { font-weight: 200; color: rgba(255, 255, 255, 0.8); width: 50%; line-height: 1.5; }
+.outcome-cell { width: 30%; color: #49d3f7; font-size: 1.1rem; position: relative; }
+
+/* Status Pulse Animation */
+.status-pulse {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #49d3f7;
+    border-radius: 50%;
+    margin-right: 12px;
+    box-shadow: 0 0 0 rgba(73, 211, 247, 0.4);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(73, 211, 247, 0.7); }
+    70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(73, 211, 247, 0); }
+    100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(73, 211, 247, 0); }
+}
+
+.semantic-link { color: #49d3f7; text-decoration: none; border-bottom: 1px dashed rgba(73, 211, 247, 0.4); }
+.semantic-link:hover { border-bottom: 1px solid #49d3f7; }
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 140px; /* Accounts for the Converge Health navbar height */
+}
+
+/* Add this to your style.css */
+.failure-mode:target {
+    animation: highlight-fade 2s ease-out;
+}
+
+@keyframes highlight-fade {
+    0% { background: rgba(73, 211, 247, 0.15); }
+    100% { background: transparent; }
+}
+
+
+.site-footer {
+    margin-top: 5rem !important; /* Controlled gap below CTA */
+    padding-top: 2rem !important;
+    border-top: 1px solid rgba(72, 173, 255, 0.1) !important;
+    /* This adds exactly two 'lines' worth of breathing room at the very bottom */
+    padding-bottom: 2rem !important;
+    text-align: center !important; /* Forces centering */
+    width: 100% !important;
+    font-family: "aktiv-grotesk", "Helvetica Neue", Arial, sans-serif !important;
+
+}
+
+.footer-legal-row p {
+    /* Hard fallback to Sans-Serif to kill Times New Roman */
+    font-family: "aktiv-grotesk", "Helvetica Neue", Arial, sans-serif !important;
+    font-size: 0.9rem !important;
+    color: rgba(255, 255, 255, 0.4) !important;
+    margin-bottom: 0.5rem !important;
+    font-weight: 200 !important;
+}
+
+.trademark-notice {
+    font-style: italic !important;
+    font-size: 0.8rem !important;
+}
+
+.footer-nav {
+    margin-bottom: 1rem;
+}
+
+.footer-link {
+    color: #49d3f7;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-divider {
+    color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px;
+}
+
+.footer-legal p {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.4);
+    margin: 5px 0;
+}
+
+
+
