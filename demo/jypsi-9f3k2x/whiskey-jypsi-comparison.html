@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Whiskey JYPSI — Web Redesign Comparison</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0a0906;--bg2:#12100b;--bg3:#1a1710;
+  --gold:#c9a55a;--gold-light:#e4cc8a;--gold-dim:#8a7238;
+  --cream:#e8dcc8;--cream-dim:#a89a82;--white:#f5f0e6;--muted:#6b6355;
+  --green:#5a8a5a;--red:#8a4a4a;--blue:#5a6a8a;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'Barlow',Helvetica,Arial,sans-serif;
+  --condensed:'Barlow Condensed','Barlow',sans-serif;
+}
+body{background:var(--bg);color:var(--cream);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+
+.container{max-width:960px;margin:0 auto;padding:3rem 2rem}
+
+/* HEADER */
+.doc-header{text-align:center;padding:4rem 2rem 3rem;border-bottom:1px solid rgba(201,165,90,.1)}
+.doc-logo{margin-bottom:1.5rem}
+.doc-logo img{height:40px;opacity:.7}
+.doc-title{font-family:var(--serif);font-weight:300;font-size:2.4rem;color:var(--white);margin-bottom:.75rem;line-height:1.15}
+.doc-subtitle{font-family:var(--sans);font-weight:300;font-size:.95rem;color:var(--cream-dim);margin-bottom:.5rem}
+.doc-date{font-family:var(--condensed);font-weight:400;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+
+/* SECTION HEADERS */
+.section-label{font-family:var(--condensed);font-weight:400;font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-dim);margin-bottom:.75rem;display:flex;align-items:center;gap:.75rem}
+.section-label::before{content:'';width:24px;height:1px;background:var(--gold-dim)}
+h2{font-family:var(--serif);font-weight:400;font-size:1.8rem;color:var(--white);margin-bottom:1rem;line-height:1.2}
+h3{font-family:var(--serif);font-weight:400;font-size:1.3rem;color:var(--white);margin-bottom:.75rem;line-height:1.25}
+p{font-family:var(--sans);font-weight:300;font-size:.9rem;line-height:1.75;color:var(--cream-dim)}
+
+/* COMPARISON GRID */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:0;margin:2rem 0;border:1px solid rgba(201,165,90,.12);overflow:hidden}
+.compare-header{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:0}
+.compare-col-header{padding:.75rem 1.25rem;font-family:var(--condensed);font-weight:500;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase}
+.col-s{background:rgba(201,165,90,.04);color:var(--cream-dim);border-right:1px solid rgba(201,165,90,.08)}
+.col-r{background:rgba(201,165,90,.08);color:var(--gold)}
+.compare-row{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid rgba(201,165,90,.06)}
+.compare-row-label{grid-column:1/-1;padding:.6rem 1.25rem;background:rgba(201,165,90,.03);font-family:var(--condensed);font-weight:500;font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold-dim);border-top:1px solid rgba(201,165,90,.08)}
+.compare-cell{padding:1rem 1.25rem;font-size:.82rem;line-height:1.7;color:var(--cream-dim)}
+.compare-cell:first-child{border-right:1px solid rgba(201,165,90,.08)}
+.check{color:var(--green);margin-right:.3rem}
+.miss{color:var(--red);margin-right:.3rem}
+.partial{color:var(--gold-dim);margin-right:.3rem}
+
+/* VERDICT CARDS */
+.verdict{margin:2.5rem 0;padding:1.5rem;border:1px solid rgba(201,165,90,.15);background:rgba(201,165,90,.03)}
+.verdict-label{font-family:var(--condensed);font-weight:500;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem}
+
+/* BOTTOM LINE */
+.bottom-line{padding:2.5rem;background:var(--bg3);border:1px solid rgba(201,165,90,.1);margin:3rem 0 2rem;text-align:center}
+.bottom-line h2{margin-bottom:1rem}
+.bottom-line p{max-width:680px;margin:0 auto;font-size:.95rem}
+
+/* LINK ROW */
+.link-row{display:flex;gap:1rem;justify-content:center;margin-top:2rem;flex-wrap:wrap}
+.link-row a{padding:.6rem 1.5rem;border:1px solid var(--gold-dim);color:var(--gold);font-family:var(--condensed);font-weight:500;font-size:.78rem;letter-spacing:.15em;text-transform:uppercase;text-decoration:none;transition:all .3s}
+.link-row a:hover{background:var(--gold);color:var(--bg)}
+.link-row a.primary{background:var(--gold);color:var(--bg)}
+.link-row a.primary:hover{background:var(--gold-light)}
+
+.divider{width:60px;height:1px;background:var(--gold-dim);margin:3rem auto}
+
+@media(max-width:700px){
+  .compare{grid-template-columns:1fr}
+  .compare-header,.compare-row{grid-template-columns:1fr}
+  .compare-cell:first-child{border-right:none;border-bottom:1px solid rgba(201,165,90,.06)}
+  .col-s,.col-r{border-right:none}
+}
+</style>
+</head>
+<body>
+
+<div class="doc-header">
+  <div class="doc-logo">
+    <img src="https://whiskeyjypsi.com/wp-content/themes/whiskey-jypsi-2023/images/WJ-logo-gradient.png" alt="Whiskey JYPSI">
+  </div>
+  <h1 class="doc-title">A Quick Look at Where Things Stand</h1>
+  <p class="doc-subtitle">Following up on our conversation — here's what I meant about not overpaying for this kind of work.</p>
+  <p class="doc-date">April 2026</p>
+</div>
+
+<div class="container">
+
+  <!-- CONTEXT -->
+  <div class="section-label">The problem</div>
+  <h2>The current site doesn't match the product.</h2>
+  <p style="margin-bottom:1.5rem">Whiskey JYPSI has earned Double Gold, Platinum, and 5-star reviews from the industry's toughest critics. But the website — the first place most customers encounter the brand — reads like a standard celebrity spirits template. No SEO foundation. No sensory storytelling. No conversion architecture. After our conversation this morning, I put together an independent analysis and a redesign concept to show what's possible and how quickly this kind of work can come together. Here's a look at the two approaches side by side.</p>
+
+  <div class="divider"></div>
+
+  <!-- COMPARISON TABLE -->
+  <div class="section-label">Head to head</div>
+  <h2>Where each approach lands.</h2>
+
+  <div class="compare">
+    <div class="compare-header">
+      <div class="compare-col-header col-s">Skalatsky V0</div>
+      <div class="compare-col-header col-r">Independent Analysis</div>
+    </div>
+
+    <div class="compare-row-label">SEO Foundation</div>
+    <div class="compare-row">
+      <div class="compare-cell"><span class="check">&#10003;</span> Title tag, meta description, H1 targeting "small batch bourbon" (33K monthly searches). Eric Church in copy. Open Graph tags. JSON-LD schema. Canonical URL. Strong technical SEO — the current site has none of this.</div>
+      <div class="compare-cell"><span class="check">&#10003;</span> Full SEO parity: identical title tag, meta, H1, OG tags, JSON-LD schema for org + all three product lines, canonical URL. Eric Church in hero copy, product alt text, and footer. Keyword targeting throughout.</div>
+    </div>
+
+    <div class="compare-row-label">Brand Identity</div>
+    <div class="compare-row">
+      <div class="compare-cell"><span class="miss">&#10007;</span> Text-only logo "WHISKEY JYPSI" in generic sans-serif. No JYPSI brand assets — no logo, gradient mark, or eye icon. Could be any whiskey brand with the name swapped in. Brand guideline gap.</div>
+      <div class="compare-cell"><span class="check">&#10003;</span> Actual JYPSI white logo in nav, gradient logo in footer. "Unbound by convention" brand line as hero statement. JYPSI Spirit background, eye icon DNA, Our Story imagery — all sourced directly from the brand.</div>
+    </div>
+
+    <div class="compare-row-label">Visual Design</div>
+    <div class="compare-row">
+      <div class="compare-cell"><span class="partial">~</span> Self-described as "V0 — do not worry about how it looks." Generic dark theme, standard section layout. The cocktail photography carries the visual weight alone. Placeholder brackets where bottles and awards should be.</div>
+      <div class="compare-cell"><span class="check">&#10003;</span> Full design system: Cormorant Garamond + Barlow type pairing, gold/cream/copper palette, film-grain texture, ambient bottle glows, scroll-triggered reveals, hover interactions. Designed to compete with Clase Azul / Macallan tier sites.</div>
+    </div>
+
+    <div class="compare-row-label">Product Presentation</div>
+    <div class="compare-row">
+      <div class="compare-cell"><span class="partial">~</span> Three products in a horizontal card row. 2-line descriptions each. No tasting notes, no proof/age specs, no per-product awards. Bottle images are placeholder brackets. Functional but thin.</div>
+      <div class="compare-cell"><span class="check">&#10003;</span> Two layers of product presentation. First: a shoppable three-across lifestyle grid using the cocktail photography — click any card and go straight to buy. Then below: full split-screen sections per product with actual bottles, ambient glow, tasting note tags, proof/age/method specs, per-product award badges, and dedicated CTAs. Browse-and-buy impulse + deep-dive storytelling.</div>
+    </div>
+
+    <div class="compare-row-label">Critic & Social Proof</div>
+    <div class="compare-row">
+      <div class="compare-cell"><span class="partial">~</span> Three quotes from critics, but some appear paraphrased rather than verbatim. Awards mentioned in hero badges. No dedicated critics section.</div>
+      <div class="compare-cell"><span class="check">&#10003;</span> Six verbatim critic quotes in a dedicated grid section. Three full-width typographic quote breaks woven between products as scroll rhythm devices. All quotes verified against the live site.</div>
+    </div>
+
+    <div class="compare-row-label">Lifestyle & Cocktails</div>
+    <div class="compare-row">
+      <div class="compare-cell"><span class="check">&#10003;</span> Smart use of recent cocktail shoot photography. 6-image Instagram-style grid. Strong lifestyle content that the current site entirely lacks.</div>
+      <div class="compare-cell"><span class="check">&#10003;</span> Cocktail photography used in two places: the shoppable product grid (driving conversion) and a dedicated Instagram-style lifestyle grid lower on the page with @whiskeyjypsi tagging. The same photo assets work harder across the page.</div>
+    </div>
+
+    <div class="compare-row-label">Video Strategy</div>
+    <div class="compare-row">
+      <div class="compare-cell"><span class="check">&#10003;</span> Correctly identifies the 43-minute YouTube problem. Placeholder for a short-form embed. Good strategic call.</div>
+      <div class="compare-cell"><span class="check">&#10003;</span> Fred Minnick show featured in a dedicated split-screen section with click-to-play. Image thumbnail loads first, video embeds on click — fast page load.</div>
+    </div>
+
+    <div class="compare-row-label">Email Capture & Community</div>
+    <div class="compare-row">
+      <div class="compare-cell"><span class="check">&#10003;</span> "10% off first order" lead magnet. Email input. Social media links to all four platforms. "9,700 strong" community stat. Good conversion thinking.</div>
+      <div class="compare-cell"><span class="check">&#10003;</span> Email capture section with the same community stat, all four social links, and the "Join the Band" language from the current site. Styled to match the design system.</div>
+    </div>
+
+    <div class="compare-row-label">Conversion Architecture</div>
+    <div class="compare-row">
+      <div class="compare-cell"><span class="check">&#10003;</span> "Buy Now" in nav. "Shop the Collection" as primary hero CTA. Buy links per product. Direct link to buy.whiskeyjypsi.com.</div>
+      <div class="compare-cell"><span class="check">&#10003;</span> "Buy Now" in nav. "Shop the Collection" hero CTA. Per-product "Get This Bottle" CTAs. All links point to buy.whiskeyjypsi.com and real product pages. Persistent nav CTA on scroll.</div>
+    </div>
+
+    <div class="compare-row-label">Mobile Responsive</div>
+    <div class="compare-row">
+      <div class="compare-cell"><span class="partial">~</span> Not evaluated in available V0.</div>
+      <div class="compare-cell"><span class="check">&#10003;</span> Full responsive breakpoint at 900px. Stacked layouts, collapsed nav, adjusted imagery for mobile. Tested in the mockup.</div>
+    </div>
+  </div>
+
+  <!-- VERDICT -->
+  <div class="verdict">
+    <div class="verdict-label">The net</div>
+    <p style="font-size:.95rem;color:var(--white)">The Skalatsky V0 identifies real SEO gaps — that's a solid diagnostic. The independent analysis takes a broader view, addressing both the technical SEO foundation <em>and</em> the brand expression challenge. It combines the SEO layer with a full design system, product presentation, and brand fidelity — incorporating strong elements from both approaches (the shoppable lifestyle grid, cocktail photography) into a cohesive experience. The audit, analysis, and redesign concept were all produced in a single working session.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- AUDIT RESULTS -->
+  <div class="section-label">Independent audit</div>
+  <h2>The numbers don't lie.</h2>
+  <p style="margin-bottom:1.5rem">We ran a comprehensive SEO / GEO / AEO audit against whiskeyjypsi.com on April 3, 2026 — crawling 12 pages across the entire site. Here's how it scored.</p>
+
+  <!-- SCORE CARDS -->
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:1.5rem 0 2rem">
+    <div style="background:rgba(201,165,90,.06);padding:1.5rem;border:1px solid rgba(201,165,90,.12);text-align:center">
+      <p style="font-family:var(--condensed);font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-dim);margin-bottom:.5rem">SEO</p>
+      <p style="font-family:var(--serif);font-size:3rem;color:var(--white);margin-bottom:.25rem;line-height:1">5<span style="font-size:1.2rem;color:var(--cream-dim)"> / 10</span></p>
+      <p style="font-size:.72rem;color:var(--gold-dim)">On Track</p>
+    </div>
+    <div style="background:rgba(201,165,90,.06);padding:1.5rem;border:1px solid rgba(201,165,90,.12);text-align:center">
+      <p style="font-family:var(--condensed);font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-dim);margin-bottom:.5rem">GEO</p>
+      <p style="font-family:var(--serif);font-size:3rem;color:var(--white);margin-bottom:.25rem;line-height:1">6<span style="font-size:1.2rem;color:var(--cream-dim)"> / 10</span></p>
+      <p style="font-size:.72rem;color:var(--gold-dim)">On Track</p>
+    </div>
+    <div style="background:rgba(201,165,90,.06);padding:1.5rem;border:1px solid rgba(201,165,90,.12);text-align:center">
+      <p style="font-family:var(--condensed);font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-dim);margin-bottom:.5rem">AEO</p>
+      <p style="font-family:var(--serif);font-size:3rem;color:var(--white);margin-bottom:.25rem;line-height:1">4<span style="font-size:1.2rem;color:var(--cream-dim)"> / 10</span></p>
+      <p style="font-size:.72rem;color:var(--red)">Needs Work</p>
+    </div>
+  </div>
+
+  <p style="margin-bottom:2rem;font-size:.88rem;color:var(--cream-dim);line-height:1.7"><strong style="color:var(--white)">Combined: 15 / 30.</strong> The brand has world-class product content and genuine authority signals — Eric Church, Ari Sussman, 70+ press placements, Double Gold and Platinum awards. But the technical foundation is suppressing all of it. Zero meta descriptions across all 12 pages. The homepage title reads "Home Page - Whiskey JYPSI." Four product pages are missing H1 tags. No Product schema, no FAQ schema, no Person schema for any of the three founders. The whiskey is exceptional — the site just isn't letting search engines or AI systems know that.</p>
+
+  <!-- CRITICAL FINDINGS -->
+  <div class="section-label">Critical findings</div>
+  <h3 style="margin-bottom:1rem">What the audit found.</h3>
+
+  <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:2.5rem">
+    <div style="padding:1rem 1.25rem;border-left:3px solid var(--red);background:rgba(138,74,74,.06)">
+      <p style="font-size:.82rem;color:var(--white);margin-bottom:.25rem"><strong>Zero meta descriptions</strong> across all 12 pages</p>
+      <p style="font-size:.75rem;color:var(--cream-dim)">Every Google impression shows an auto-generated snippet. This directly reduces click-through rate — highest-ROI fix available.</p>
+    </div>
+    <div style="padding:1rem 1.25rem;border-left:3px solid var(--red);background:rgba(138,74,74,.06)">
+      <p style="font-size:.82rem;color:var(--white);margin-bottom:.25rem"><strong>Homepage title: "Home Page - Whiskey JYPSI"</strong></p>
+      <p style="font-size:.75rem;color:var(--cream-dim)">Wastes the most valuable keyword slot in the entire site. Should target "Award-Winning Small Batch Bourbon."</p>
+    </div>
+    <div style="padding:1rem 1.25rem;border-left:3px solid var(--red);background:rgba(138,74,74,.06)">
+      <p style="font-size:.82rem;color:var(--white);margin-bottom:.25rem"><strong>4 pages missing H1 tags</strong> — /whiskey/, /jypsi-spirit/, /tribute/, /barrel-seekers/</p>
+      <p style="font-size:.75rem;color:var(--cream-dim)">Search engines can't identify the primary topic of these pages. Basic content hierarchy is broken.</p>
+    </div>
+    <div style="padding:1rem 1.25rem;border-left:3px solid var(--gold-dim);background:rgba(201,165,90,.04)">
+      <p style="font-size:.82rem;color:var(--white);margin-bottom:.25rem"><strong>No Product schema</strong> on any product page</p>
+      <p style="font-size:.75rem;color:var(--cream-dim)">Tribute, Explorer, Legacy, and Barrel Seekers all lack Product markup — no price, availability, or ratings in search results.</p>
+    </div>
+    <div style="padding:1rem 1.25rem;border-left:3px solid var(--gold-dim);background:rgba(201,165,90,.04)">
+      <p style="font-size:.82rem;color:var(--white);margin-bottom:.25rem"><strong>No FAQ schema, no question-phrased headings</strong> — site-wide</p>
+      <p style="font-size:.75rem;color:var(--cream-dim)">The brand has rich, answerable content but none of it is formatted for featured snippets or voice search. Invisible to answer engines.</p>
+    </div>
+    <div style="padding:1rem 1.25rem;border-left:3px solid var(--gold-dim);background:rgba(201,165,90,.04)">
+      <p style="font-size:.82rem;color:var(--white);margin-bottom:.25rem"><strong>No Person schema</strong> for Eric Church, Raj Alva, or Ari Sussman</p>
+      <p style="font-size:.75rem;color:var(--cream-dim)">AI engines can't confidently identify or cite the founders. Missing sameAs social links in Organization schema.</p>
+    </div>
+    <div style="padding:1rem 1.25rem;border-left:3px solid var(--gold-dim);background:rgba(201,165,90,.04)">
+      <p style="font-size:.82rem;color:var(--white);margin-bottom:.25rem"><strong>Brand pages are critically thin</strong> — /our-story/ (375 words), /jypsi-spirit/ (275 words)</p>
+      <p style="font-size:.75rem;color:var(--cream-dim)">These are the pages AI engines and journalists visit to understand the company. Both need 600+ words of substantive, factual content.</p>
+    </div>
+    <div style="padding:1rem 1.25rem;border-left:3px solid var(--gold-dim);background:rgba(201,165,90,.04)">
+      <p style="font-size:.82rem;color:var(--white);margin-bottom:.25rem"><strong>Image alt text: "starks logo"</strong> used across the entire site</p>
+      <p style="font-size:.75rem;color:var(--cream-dim)">A leftover placeholder from a prior theme. The brand name isn't reflected in its own logo alt text.</p>
+    </div>
+  </div>
+
+  <!-- WHAT'S WORKING -->
+  <div class="section-label">What's already strong</div>
+  <h3 style="margin-bottom:1rem">The foundation to build on.</h3>
+
+  <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:2.5rem">
+    <div style="padding:1rem 1.25rem;border-left:3px solid var(--green);background:rgba(90,138,90,.06)">
+      <p style="font-size:.82rem;color:var(--white);margin:0"><strong>Exceptional product factual density.</strong> Explorer lists exact mash bill (66% corn / 30% rye / 4% malted barley), proof (103), wood origins (Forest of Tronçais). Legacy Batch 001 specifies component percentages and ages. This is exactly what AI engines prefer to cite.</p>
+    </div>
+    <div style="padding:1rem 1.25rem;border-left:3px solid var(--green);background:rgba(90,138,90,.06)">
+      <p style="font-size:.82rem;color:var(--white);margin:0"><strong>70+ press placements</strong> including Forbes, USA Today, Whisky Advocate, Esquire. 2024 Whiskey Maker of the Year. SF Double Gold, Ascot Platinum, 95-point Bottle Raiders score.</p>
+    </div>
+    <div style="padding:1rem 1.25rem;border-left:3px solid var(--green);background:rgba(90,138,90,.06)">
+      <p style="font-size:.82rem;color:var(--white);margin:0"><strong>Named expert attribution.</strong> Ari Sussman is identified and quoted directly. Three named founders with real credentials — strongest E-E-A-T signal available in the celebrity spirits category.</p>
+    </div>
+    <div style="padding:1rem 1.25rem;border-left:3px solid var(--green);background:rgba(90,138,90,.06)">
+      <p style="font-size:.82rem;color:var(--white);margin:0"><strong>Cherokee White Corn and cross-category blending</strong> are genuinely original narratives that differentiate from every competitor. AI engines prefer distinctive, citation-worthy content.</p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- BUSINESS CASE -->
+  <div class="section-label">What this means for the business</div>
+  <h2>The whiskey sells itself. The site should too.</h2>
+
+  <p style="margin-bottom:1.5rem">The audit reveals a clear pattern: the brand and the product are world-class, but the digital infrastructure is leaving money on the table at every layer.</p>
+
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:1.5rem 0 2rem">
+    <div style="background:rgba(201,165,90,.04);padding:1.2rem;border:1px solid rgba(201,165,90,.08)">
+      <p style="font-family:var(--serif);font-size:1.6rem;color:var(--white);margin-bottom:.25rem">0 / 12</p>
+      <p style="font-size:.75rem;color:var(--cream-dim)">Pages with meta descriptions — every Google impression shows an auto-generated snippet</p>
+    </div>
+    <div style="background:rgba(201,165,90,.04);padding:1.2rem;border:1px solid rgba(201,165,90,.08)">
+      <p style="font-family:var(--serif);font-size:1.6rem;color:var(--white);margin-bottom:.25rem">4 / 10</p>
+      <p style="font-size:.75rem;color:var(--cream-dim)">AEO score — zero FAQ schema, zero question-phrased headings, invisible to voice and answer engines</p>
+    </div>
+    <div style="background:rgba(201,165,90,.04);padding:1.2rem;border:1px solid rgba(201,165,90,.08)">
+      <p style="font-family:var(--serif);font-size:1.6rem;color:var(--white);margin-bottom:.25rem">15 / 30</p>
+      <p style="font-size:.75rem;color:var(--cream-dim)">Combined SEO/GEO/AEO score — significant upside available with targeted structural fixes</p>
+    </div>
+  </div>
+
+  <p style="margin-bottom:1rem">The redesign concept addresses these gaps at every layer — not just the visual experience, but the technical infrastructure underneath it:</p>
+
+  <p style="margin-bottom:.5rem;color:var(--white)"><span style="color:var(--gold)">&#8226;</span> &nbsp;Proper title tags, meta descriptions, and H1s targeting "small batch bourbon" (33K monthly searches)</p>
+  <p style="margin-bottom:.5rem;color:var(--white)"><span style="color:var(--gold)">&#8226;</span> &nbsp;Full JSON-LD schema: Organization with sameAs, Product schema for all three lines, structured review data</p>
+  <p style="margin-bottom:.5rem;color:var(--white)"><span style="color:var(--gold)">&#8226;</span> &nbsp;Open Graph tags so every social share renders a branded preview with bottle imagery</p>
+  <p style="margin-bottom:.5rem;color:var(--white)"><span style="color:var(--gold)">&#8226;</span> &nbsp;Eric Church's name in page copy and meta for the first time — unlocking 390+ monthly branded searches</p>
+  <p style="margin-bottom:.5rem;color:var(--white)"><span style="color:var(--gold)">&#8226;</span> &nbsp;Tasting notes, product specs, and awards front-and-center — the exact factual density AI engines want to cite</p>
+  <p style="margin-bottom:.5rem;color:var(--white)"><span style="color:var(--gold)">&#8226;</span> &nbsp;Shoppable lifestyle grid + deep product sections — browse-and-buy impulse meets editorial storytelling</p>
+  <p style="margin-bottom:1.5rem;color:var(--white)"><span style="color:var(--gold)">&#8226;</span> &nbsp;A design that matches the quality of a Double Gold whiskey — not a WordPress template</p>
+
+  <div class="verdict" style="margin-bottom:2rem">
+    <div class="verdict-label">The bottom line</div>
+    <p style="font-size:.95rem;color:var(--white)">Whiskey JYPSI has a 6/10 GEO score despite having better raw material than most competitors — because the technical infrastructure isn't surfacing it. The brand is sitting on 70+ press placements, three named founders with real credentials, and genuinely original product stories. The technical SEO fixes are days of work. The schema gaps are days of work. And a design that matches the product quality can come together faster than you might expect. The product has already won. The site just needs to catch up.</p>
+  </div>
+
+  <div class="bottom-line">
+    <h2>See the full redesign concept.</h2>
+    <p>The complete page — SEO foundation, brand design, bottles, cocktails, critics, video, email capture, and conversion architecture — built in an afternoon to show what's possible.</p>
+    <div class="link-row">
+      <a href="whiskey-jypsi-v1-redesign.html" class="primary">View the Redesign</a>
+      <a href="https://skalatsky.com/demo/index_backup_whiskey_jypsi.html">View Skalatsky V0</a>
+      <a href="https://whiskeyjypsi.com">View Current Site</a>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
