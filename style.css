@@ -124,7 +124,34 @@ nav.mobile-menu.open {
 }
 
 /* ==========================================================================
-   3. ARTICLE & INSIGHTS COMPONENTS
+   3. HERO (HOME PAGE)
+   ========================================================================== */
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 2rem 4rem;
+  font-family: "aktiv-grotesk", sans-serif;
+}
+
+.hero-text h1 {
+  font-size: 3.2rem;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  font-weight: 200;
+  margin-bottom: 1.5rem;
+  max-width: 780px;
+}
+
+.cta-wrapper {
+  margin-top: 2.5rem;
+}
+
+/* ==========================================================================
+   4. ARTICLE & INSIGHTS COMPONENTS
    ========================================================================== */
 .article-container {
   max-width: 850px;
@@ -265,6 +292,9 @@ h3 { font-size: 1.6rem; color: #49d3f7; margin-top: 2rem; margin-bottom: 1rem; }
    ========================================================================== */
 @media (max-width: 767px) {
   .article-container { margin-top: 100px; padding: 0 1.5rem; }
+  .hero { padding: 100px 1.5rem 3rem; }
+  .hero-text h1 { font-size: 2.5rem; }
+  .hero-text p { font-size: 1.1rem; }
   h1 { font-size: 2.5rem; }
   .sprint-grid { grid-template-columns: 1fr; gap: 1.5rem; }
   .author-bio-content { flex-direction: column; text-align: center; }
