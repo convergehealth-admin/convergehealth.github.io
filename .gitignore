@@ -3,3 +3,6 @@
 
 # Claude Code local settings
 .claude/
+
+# Internal docs (not for the public site)
+privacy-policy/*.md
